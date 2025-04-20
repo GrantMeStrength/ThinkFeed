@@ -25,7 +25,7 @@ struct ThinkFeedApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FeedView()
         }
         .modelContainer(sharedModelContainer)
     }
