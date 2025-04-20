@@ -43,6 +43,8 @@ struct FeedView: View {
     @Environment(\.modelContext) private var modelContext
     @AppStorage("selectedCategories") private var selectedCategoriesData: Data = try! JSONEncoder().encode(Set(PostCategory.allCases))
     @State private var showingSettings = false
+    @State private var showError = false
+    @State private var errorMessage = ""
     
     private var selectedCategories: Set<PostCategory> {
         (try? JSONDecoder().decode(Set<PostCategory>.self, from: selectedCategoriesData)) ?? Set(PostCategory.allCases)
@@ -81,48 +83,29 @@ struct FeedView: View {
                 SettingsView()
             }
             .task {
-                if allItems.isEmpty {
-                    addSampleData()
-                }
+               // if allItems.isEmpty {
+                    loadSampleData()
+                //}
+            }
+            .alert("Error", isPresented: $showError) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(errorMessage)
             }
         }
     }
     
-    private func addSampleData() {
-        let samplePosts = [
-            Item(title: "Welcome to ThinkFeed!", 
-                 content: "This is your first post on ThinkFeed. Start exploring the social experience.",
-                 category: .technology,
-                 timestamp: Date().addingTimeInterval(-3600 * 2)),
-            
-            Item(title: "The Future of AI", 
-                 content: "Exploring the latest developments in artificial intelligence and machine learning.",
-                 category: .science,
-                 timestamp: Date().addingTimeInterval(-3600)),
-            
-            Item(title: "Healthy Living Tips", 
-                 content: "Simple ways to maintain a healthy lifestyle in our busy modern world.",
-                 category: .health,
-                 timestamp: Date().addingTimeInterval(-1800)),
-            
-            Item(title: "Creative Writing Workshop", 
-                 content: "Join us for an online workshop on creative writing techniques.",
-                 category: .education,
-                 timestamp: Date()),
-            
-            Item(title: "Modern Art Trends", 
-                 content: "Exploring the latest trends in contemporary art.",
-                 category: .arts,
-                 timestamp: Date().addingTimeInterval(-300)),
-            
-            Item(title: "Business Strategy", 
-                 content: "Essential business strategies for the modern entrepreneur.",
-                 category: .business,
-                 timestamp: Date().addingTimeInterval(-7200))
-        ]
-        
-        for post in samplePosts {
-            modelContext.insert(post)
+    private func loadSampleData() {
+        do {
+            let items = try DataManager.shared.loadSampleData()
+            for item in items {
+                modelContext.insert(item)
+            }
+            try modelContext.save()
+        } catch {
+            errorMessage = "Failed to load sample data: \(error.localizedDescription)"
+            showError = true
+            print("Error loading sample data: \(error)")
         }
     }
 }

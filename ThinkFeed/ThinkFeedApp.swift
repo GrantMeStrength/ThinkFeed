@@ -10,23 +10,16 @@ import SwiftData
 
 @main
 struct ThinkFeedApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+    init() {
+        print("Application starting...")
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+       // UserDefaults.standard.set(true, forKey: "_SwiftData_Debug_Enabled")
+    }
+    
     var body: some Scene {
         WindowGroup {
             FeedView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: Item.self, isUndoEnabled: true)
     }
 }

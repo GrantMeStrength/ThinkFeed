@@ -1,0 +1,817 @@
+{
+"posts": [
+
+{"title":"Welcome","content":"Welcome to ThinkFeed!","category":"ThinkFeed","imageFileName":"","timestampOffset":100000000},
+
+
+{"title":"Prime Numbers","content":"A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.","category":"Math","imageFileName":"","timestampOffset":-9132},
+
+{"title":"Pi","content":"Pi is an irrational number approximately equal to 3.14159, representing the ratio of a circle's circumference to its diameter.","category":"Math","imageFileName":"","timestampOffset":-4235},
+{"title":"Golden Ratio","content":"The golden ratio is approximately 1.618 and appears frequently in geometry, art, and nature.","category":"Math","imageFileName":"","timestampOffset":-7541},
+{"title":"Quadratic Formula","content":"The quadratic formula solves ax²+bx+c=0 and is x = (-b ± √(b²-4ac))/(2a).","category":"Math","imageFileName":"","timestampOffset":-3012},
+{"title":"Fibonacci Sequence","content":"The Fibonacci sequence is a series where each number is the sum of the two preceding ones.","category":"Math","imageFileName":"","timestampOffset":-6154},
+{"title":"Zero","content":"Zero is the only real number that is neither positive nor negative.","category":"Math","imageFileName":"","timestampOffset":-4786},
+{"title":"Imaginary Numbers","content":"The square root of -1 is denoted as i, the basis for imaginary numbers.","category":"Math","imageFileName":"","timestampOffset":-6984},
+{"title":"Area of a Circle","content":"The area of a circle is πr², where r is the radius.","category":"Math","imageFileName":"","timestampOffset":-8421},
+{"title":"Probability","content":"Probability is a measure of the likelihood that an event will occur, ranging from 0 to 1.","category":"Math","imageFileName":"","timestampOffset":-2315},
+{"title":"Logarithms","content":"A logarithm is the inverse operation to exponentiation.","category":"Math","imageFileName":"","timestampOffset":-3728},
+
+{"title":"Photosynthesis","content":"Photosynthesis is how plants convert sunlight, water, and CO₂ into oxygen and glucose.","category":"Science","imageFileName":"","timestampOffset":-9381},
+{"title":"DNA Structure","content":"DNA is composed of two strands forming a double helix.","category":"Science","imageFileName":"","timestampOffset":-3651},
+{"title":"Newton’s Laws","content":"Newton’s three laws explain motion and force.","category":"Science","imageFileName":"","timestampOffset":-7852},
+{"title":"Periodic Table","content":"The periodic table organizes elements by increasing atomic number.","category":"Science","imageFileName":"","timestampOffset":-5789},
+{"title":"Atoms","content":"Atoms are the basic units of matter, made of protons, neutrons, and electrons.","category":"Science","imageFileName":"","timestampOffset":-1943},
+{"title":"Gravity","content":"Gravity is a force that attracts two bodies toward each other.","category":"Science","imageFileName":"","timestampOffset":-2145},
+{"title":"Evaporation","content":"Evaporation is the process of a liquid turning into vapor.","category":"Science","imageFileName":"","timestampOffset":-4205},
+{"title":"Light Speed","content":"The speed of light in vacuum is approximately 299,792 kilometers per second.","category":"Science","imageFileName":"","timestampOffset":-8742},
+{"title":"Electricity","content":"Electricity is the flow of electric charge, primarily carried by electrons.","category":"Science","imageFileName":"","timestampOffset":-3650},
+{"title":"Mitosis","content":"Mitosis is a process where a single cell divides into two identical daughter cells.","category":"Science","imageFileName":"","timestampOffset":-4935},
+
+{"title":"WWII","content":"World War II lasted from 1939 to 1945, involving major world powers.","category":"History","imageFileName":"","timestampOffset":-6391},
+{"title":"Industrial Revolution","content":"The Industrial Revolution began in the 18th century and drastically changed manufacturing.","category":"History","imageFileName":"","timestampOffset":-8372},
+{"title":"French Revolution","content":"The French Revolution (1789–1799) overthrew the monarchy and led to social change.","category":"History","imageFileName":"","timestampOffset":-5812},
+{"title":"Printing Press","content":"Invented by Gutenberg in the 15th century, it revolutionized information dissemination.","category":"History","imageFileName":"","timestampOffset":-4931},
+{"title":"Roman Empire","content":"The Roman Empire dominated much of Europe and the Mediterranean for centuries.","category":"History","imageFileName":"","timestampOffset":-7230},
+{"title":"Great Depression","content":"The Great Depression was a worldwide economic downturn in the 1930s.","category":"History","imageFileName":"","timestampOffset":-4521},
+{"title":"Cold War","content":"The Cold War was a geopolitical tension between the US and USSR after WWII.","category":"History","imageFileName":"","timestampOffset":-6129},
+{"title":"American Revolution","content":"The American Revolution led to the United States gaining independence in 1776.","category":"History","imageFileName":"","timestampOffset":-5543},
+{"title":"Ancient Egypt","content":"Ancient Egyptians built pyramids and developed one of the earliest writing systems.","category":"History","imageFileName":"","timestampOffset":-2671},
+{"title":"Moon Landing","content":"Apollo 11 landed the first humans on the Moon in 1969.","category":"History","imageFileName":"","timestampOffset":-7821},
+
+{"title":"Corporate Finance","content":"Corporate finance deals with funding sources, capital structuring, and investment decisions.","category":"Business","imageFileName":"","timestampOffset":-4321},
+{"title":"Market Economy","content":"A market economy relies on supply and demand to allocate resources and set prices.","category":"Business","imageFileName":"","timestampOffset":-6543},
+{"title":"Entrepreneurship","content":"Entrepreneurship is the process of starting and running a new business to make a profit.","category":"Business","imageFileName":"","timestampOffset":-5432},
+{"title":"Supply Chain Management","content":"Supply chain management involves overseeing the flow of goods and services from origin to consumer.","category":"Business","imageFileName":"","timestampOffset":-7654},
+{"title":"Business Ethics","content":"Business ethics are principles that guide the conduct of a business's actions and decisions.","category":"Business","imageFileName":"","timestampOffset":-8765},
+{"title":"Investment Analysis","content":"Investment analysis evaluates the potential of an investment to generate returns.","category":"Business","imageFileName":"","timestampOffset":-1234},
+{"title":"Consumer Behavior","content":"Consumer behavior studies how individuals make decisions to spend their resources.","category":"Business","imageFileName":"","timestampOffset":-2345},
+{"title":"Financial Statements","content":"Financial statements summarize the financial performance and position of a business.","category":"Business","imageFileName":"","timestampOffset":-3456},
+{"title":"Risk Management","content":"Risk management identifies, assesses, and prioritizes risks to minimize their impact.","category":"Business","imageFileName":"","timestampOffset":-4567},
+{"title":"Marketing Strategies","content":"Marketing strategies are plans to reach and persuade target audiences to buy products.","category":"Business","imageFileName":"","timestampOffset":-5678},
+
+{"title":"Renaissance Art","content":"The Renaissance was a period of renewed interest in art and culture in Europe.","category":"Arts","imageFileName":"","timestampOffset":-7890},
+{"title":"Impressionism","content":"Impressionism is an art movement characterized by small, visible brush strokes and open composition.","category":"Arts","imageFileName":"","timestampOffset":-6789},
+{"title":"Sculpture Techniques","content":"Sculpture techniques include carving, modeling, casting, and assembling materials.","category":"Arts","imageFileName":"","timestampOffset":-5678},
+{"title":"Abstract Art","content":"Abstract art uses shapes, colors, and forms to create compositions independent of visual references.","category":"Arts","imageFileName":"","timestampOffset":-4567},
+{"title":"Street Art","content":"Street art is visual art created in public locations, often addressing social issues.","category":"Arts","imageFileName":"","timestampOffset":-3456},
+{"title":"Photography","content":"Photography captures images using light-sensitive surfaces, creating a visual representation of reality.","category":"Arts","imageFileName":"","timestampOffset":-2345},
+{"title":"Theater Origins","content":"Theater originated in ancient Greece as a form of storytelling and performance.","category":"Arts","imageFileName":"","timestampOffset":-1234},
+{"title":"Music Genres","content":"Music genres categorize music based on similarities in form, style, or subject matter.","category":"Arts","imageFileName":"","timestampOffset":-4321},
+{"title":"Dance Forms","content":"Dance forms vary widely, including ballet, hip-hop, and traditional folk dances.","category":"Arts","imageFileName":"","timestampOffset":-5432},
+{"title":"Literary Movements","content":"Literary movements are trends in literature reflecting specific themes, styles, or philosophies.","category":"Arts","imageFileName":"","timestampOffset":-6543},
+
+{"title":"Algorithms","content":"An algorithm is a step-by-step procedure for solving a problem or completing a task.","category":"Computer Science","imageFileName":"","timestampOffset":-7654},
+{"title":"Data Structures","content":"Data structures organize and store data efficiently for optimal access and modification.","category":"Computer Science","imageFileName":"","timestampOffset":-8765},
+{"title":"Machine Learning","content":"Machine learning enables computers to learn from data and improve their performance over time.","category":"Computer Science","imageFileName":"","timestampOffset":-5432},
+{"title":"Programming Languages","content":"Programming languages are formal languages used to communicate instructions to a computer.","category":"Computer Science","imageFileName":"","timestampOffset":-4321},
+{"title":"Cybersecurity","content":"Cybersecurity protects computer systems from theft, damage, or unauthorized access.","category":"Computer Science","imageFileName":"","timestampOffset":-3210},
+{"title":"Web Development","content":"Web development involves building and maintaining websites and web applications.","category":"Computer Science","imageFileName":"","timestampOffset":-2109},
+{"title":"Artificial Intelligence","content":"Artificial intelligence simulates human intelligence in machines to perform tasks autonomously.","category":"Computer Science","imageFileName":"","timestampOffset":-1098},
+{"title":"Cloud Computing","content":"Cloud computing delivers computing services over the internet, enabling on-demand access to resources.","category":"Computer Science","imageFileName":"","timestampOffset":-1987},
+{"title":"Software Engineering","content":"Software engineering applies engineering principles to software development and maintenance.","category":"Computer Science","imageFileName":"","timestampOffset":-9876},
+{"title":"Database Management","content":"Database management involves storing, retrieving, and managing data in databases.","category":"Computer Science","imageFileName":"","timestampOffset":-8765},
+
+{"title":"Language Families","content":"Language families group languages based on common ancestry and shared characteristics.","category":"Languages","imageFileName":"","timestampOffset":-7654},
+{"title":"Grammar Rules","content":"Grammar rules govern the structure and composition of sentences in a language.","category":"Languages","imageFileName":"","timestampOffset":-6543},
+{"title":"Dialects","content":"Dialects are regional variations of a language, differing in pronunciation, vocabulary, and grammar.","category":"Languages","imageFileName":"","timestampOffset":-5432},
+{"title":"Translation","content":"Translation is the process of converting text from one language to another while preserving meaning.","category":"Languages","imageFileName":"","timestampOffset":-4321},
+{"title":"Language Acquisition","content":"Language acquisition is the process by which people learn their native language.","category":"Languages","imageFileName":"","timestampOffset":-3210},
+{"title":"Phonetics","content":"Phonetics studies the sounds of human speech and their production, transmission, and perception.","category":"Languages","imageFileName":"","timestampOffset":-2109},
+{"title":"Linguistics","content":"Linguistics is the scientific study of language and its structure.","category":"Languages","imageFileName":"","timestampOffset":-1098},
+{"title":"Language Preservation","content":"Language preservation aims to protect and maintain endangered languages from extinction.","category":"Languages","imageFileName":"","timestampOffset":-1987},
+{"title":"Bilingualism","content":"Bilingualism is the ability to speak and understand two languages fluently.","category":"Languages","imageFileName":"","timestampOffset":-9876},
+{"title":"Language and Culture","content":"Language and culture are interconnected, influencing each other in communication and expression.","category":"Languages","imageFileName":"","timestampOffset":-8765},
+
+{"title":"Supply and Demand","content":"Supply and demand are fundamental concepts in economics that determine prices in a market.","category":"Economics","imageFileName":"","timestampOffset":-7654},
+{"title":"Inflation","content":"Inflation is the rate at which the general level of prices for goods and services rises.","category":"Economics","imageFileName":"","timestampOffset":-6543},
+{"title":"Gross Domestic Product","content":"Gross Domestic Product (GDP) measures the economic performance of a country.","category":"Economics","imageFileName":"","timestampOffset":-5432},
+{"title":"Monetary Policy","content":"Monetary policy involves managing the money supply and interest rates to influence the economy.","category":"Economics","imageFileName":"","timestampOffset":-4321},
+{"title":"Fiscal Policy","content":"Fiscal policy uses government spending and taxation to influence the economy's performance.","category":"Economics","imageFileName":"","timestampOffset":-3210},
+{"title":"Trade Balance","content":"The trade balance measures the difference between a country's exports and imports.","category":"Economics","imageFileName":"","timestampOffset":-2109},
+{"title":"Labor Market","content":"The labor market is the supply and demand for labor, where employers seek employees.","category":"Economics","imageFileName":"","timestampOffset":-1098},
+{"title":"Consumer Price Index","content":"The Consumer Price Index (CPI) measures the average change in prices paid by consumers over time.","category":"Economics","imageFileName":"","timestampOffset":-1987},
+{"title":"Economic Growth","content":"Economic growth refers to an increase in the production of goods and services over time.","category":"Economics","imageFileName":"","timestampOffset":-9876},
+{"title":"Market Structures","content":"Market structures describe the organizational characteristics of a market, influencing competition.","category":"Economics","imageFileName":"","timestampOffset":-8765},
+
+{"title":"Divisibility Rule for 3","content":"A number is divisible by 3 if the sum of its digits is divisible by 3.","category":"Math","imageFileName":"","timestampOffset":-2401},
+{"title":"Gravity on the Moon","content":"The Moon's gravity is about 1/6th as strong as Earth's.","category":"Science","imageFileName":"","timestampOffset":-5623},
+{"title":"The Silk Road","content":"The Silk Road was a trade network connecting Asia and Europe for centuries.","category":"History","imageFileName":"","timestampOffset":-6378},
+{"title":"Net Profit","content":"Net profit is revenue minus all expenses, taxes, and costs.","category":"Business","imageFileName":"","timestampOffset":-4423},
+{"title":"Surrealism","content":"Surrealism is an art movement that emphasizes the irrational and dream-like.","category":"Arts","imageFileName":"","timestampOffset":-3280},
+{"title":"Boolean Logic","content":"Boolean logic uses true and false values to perform logical operations in programming.","category":"Computer Science","imageFileName":"","timestampOffset":-7854},
+{"title":"Infinitive Verbs","content":"In English, infinitives are the base form of a verb, often preceded by 'to'.","category":"Languages","imageFileName":"","timestampOffset":-1902},
+{"title":"Opportunity Cost","content":"Opportunity cost is the value of the best alternative not chosen.","category":"Economics","imageFileName":"","timestampOffset":-5194},
+
+{"title":"Even Numbers","content":"Even numbers are integers divisible by 2, like -4, 0, and 12.","category":"Math","imageFileName":"","timestampOffset":-2178},
+{"title":"States of Matter","content":"The four basic states of matter are solid, liquid, gas, and plasma.","category":"Science","imageFileName":"","timestampOffset":-3481},
+{"title":"Treaty of Versailles","content":"The Treaty of Versailles formally ended World War I in 1919.","category":"History","imageFileName":"","timestampOffset":-5782},
+{"title":"Break-even Point","content":"The break-even point is when total revenue equals total costs.","category":"Business","imageFileName":"","timestampOffset":-3910},
+{"title":"Monochrome Art","content":"Monochrome art uses only one color or shades of one color.","category":"Arts","imageFileName":"","timestampOffset":-2159},
+{"title":"Compilers","content":"A compiler translates source code into executable machine code.","category":"Computer Science","imageFileName":"","timestampOffset":-6832},
+{"title":"False Friends","content":"False friends are words that look similar in two languages but have different meanings.","category":"Languages","imageFileName":"","timestampOffset":-2770},
+{"title":"Elasticity","content":"Elasticity in economics measures how much quantity demanded responds to price changes.","category":"Economics","imageFileName":"","timestampOffset":-4244},
+
+{
+"title": "Translation",
+"content": "Translation conveys meaning between languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -2653
+},
+{
+"title": "Moon Landing",
+"content": "Apollo 11 landed the first humans on the Moon in 1969.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -5599
+},
+{
+"title": "Net Profit",
+"content": "Net profit is revenue minus all expenses.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -4434
+},
+{
+"title": "Cold War",
+"content": "The Cold War was a tension between the US and USSR.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -8256
+},
+{
+"title": "Area of a Triangle",
+"content": "The area of a triangle is \u00bd \u00d7 base \u00d7 height.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -5912
+},
+{
+"title": "Latin Roots",
+"content": "Many English words come from Latin.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -4852
+},
+{
+"title": "GDP",
+"content": "GDP measures a country\u2019s economic output.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -2744
+},
+{
+"title": "Business Plan",
+"content": "A document outlining a company's goals and strategy.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -3214
+},
+{
+"title": "Abstract Art",
+"content": "Abstract art does not attempt to represent reality.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -7566
+},
+{
+"title": "Net Profit",
+"content": "Net profit is revenue minus all expenses.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -3955
+},
+{
+"title": "Even Numbers",
+"content": "Even numbers are divisible by 2.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -8084
+},
+{
+"title": "Industrial Revolution",
+"content": "This revolution transformed manufacturing in the 18th century.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -6542
+},
+{
+"title": "Gravity",
+"content": "Gravity is a force that pulls objects toward one another.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -8182
+},
+{
+"title": "The Silk Road",
+"content": "An ancient trade route connecting East and West.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -4863
+},
+{
+"title": "Cold War",
+"content": "The Cold War was a tension between the US and USSR.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -7776
+},
+{
+"title": "Surrealism",
+"content": "Surrealism focuses on dreams and the unconscious.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -9132
+},
+{
+"title": "Entrepreneurship",
+"content": "Entrepreneurship involves launching and managing a business.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -8875
+},
+{
+"title": "Evolution",
+"content": "Evolution is change in the heritable traits of biological populations over generations.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -1858
+},
+{
+"title": "Leadership Styles",
+"content": "Autocratic, democratic, and laissez-faire.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -9569
+},
+{
+"title": "Brand Equity",
+"content": "Brand equity is the value of a brand.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -6731
+},
+{
+"title": "Algorithm",
+"content": "An algorithm is a step-by-step procedure.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -4604
+},
+{
+"title": "Cubism",
+"content": "Cubism breaks subjects into geometric forms.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -5301
+},
+{
+"title": "Cold War",
+"content": "The Cold War was a tension between the US and USSR.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -6751
+},
+{
+"title": "Pi Digits",
+"content": "Pi starts as 3.14159 and continues infinitely without repeating.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -4079
+},
+{
+"title": "Verb Conjugation",
+"content": "Conjugation is changing a verb to match subject or tense.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -3797
+},
+{
+"title": "Supply and Demand",
+"content": "These determine prices in a market economy.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -9092
+},
+{
+"title": "Pi Digits",
+"content": "Pi starts as 3.14159 and continues infinitely without repeating.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -5223
+},
+{
+"title": "Function",
+"content": "A function groups code into reusable blocks.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -2056
+},
+{
+"title": "Supply and Demand",
+"content": "These determine prices in a market economy.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -4420
+},
+{
+"title": "Array",
+"content": "An array stores multiple values.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -4289
+},
+{
+"title": "Recursion",
+"content": "A function that calls itself is recursive.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -859
+},
+{
+"title": "The Roman Empire",
+"content": "The Roman Empire was one of the largest empires in history.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -8138
+},
+{
+"title": "Surrealism",
+"content": "Surrealism focuses on dreams and the unconscious.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -2456
+},
+{
+"title": "Language Families",
+"content": "Languages are grouped into families by origin.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -9900
+},
+{
+"title": "Algorithm",
+"content": "An algorithm is a step-by-step procedure.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -2424
+},
+{
+"title": "Modern Art",
+"content": "Modern art breaks traditional forms.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -6231
+},
+{
+"title": "Monetary Policy",
+"content": "Monetary policy controls money supply.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -4217
+},
+{
+"title": "Newton's Laws",
+"content": "Newton described the relationship between motion and forces.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -9050
+},
+{
+"title": "Loop",
+"content": "Loops repeat blocks of code.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -2154
+},
+{
+"title": "Cold War",
+"content": "The Cold War was a tension between the US and USSR.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -978
+},
+{
+"title": "Object-Oriented Programming",
+"content": "OOP organizes code using classes and objects.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -9435
+},
+{
+"title": "Exponent Rules",
+"content": "To multiply powers with the same base, add the exponents.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -6343
+},
+{
+"title": "Cubism",
+"content": "Cubism breaks subjects into geometric forms.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -2274
+},
+{
+"title": "Color Theory",
+"content": "Color theory explains how colors interact.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -4495
+},
+{
+"title": "Entrepreneurship",
+"content": "Entrepreneurship involves launching and managing a business.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -6860
+},
+{
+"title": "Binary",
+"content": "Binary uses 0s and 1s to represent data.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -326
+},
+{
+"title": "Exponent Rules",
+"content": "To multiply powers with the same base, add the exponents.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -5735
+},
+{
+"title": "Binary",
+"content": "Binary uses 0s and 1s to represent data.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -8298
+},
+{
+"title": "Cubism",
+"content": "Cubism breaks subjects into geometric forms.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -7549
+},
+{
+"title": "Even Numbers",
+"content": "Even numbers are divisible by 2.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -9900
+},
+{
+"title": "Mitosis",
+"content": "Mitosis is the process of cell division in eukaryotes.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -6591
+},
+{
+"title": "Renaissance Art",
+"content": "Renaissance artists focused on realism and humanism.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -2245
+},
+{
+"title": "Marketing Mix",
+"content": "Product, price, place, and promotion make up the 4 Ps.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -3104
+},
+{
+"title": "Mitosis",
+"content": "Mitosis is the process of cell division in eukaryotes.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -5403
+},
+{
+"title": "Photography",
+"content": "Photography captures images using light.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -5812
+},
+{
+"title": "Supply and Demand",
+"content": "These determine prices in a market economy.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -7622
+},
+{
+"title": "Capital",
+"content": "Capital includes assets used in production.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -4562
+},
+{
+"title": "Phonetics",
+"content": "Phonetics is the study of speech sounds.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -4600
+},
+{
+"title": "Bilingualism",
+"content": "Bilingual people speak two languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -7283
+},
+{
+"title": "Photography",
+"content": "Photography captures images using light.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -517
+},
+{
+"title": "Industrial Revolution",
+"content": "This revolution transformed manufacturing in the 18th century.",
+"category": "History",
+"imageFileName": "",
+"timestampOffset": -9754
+},
+{
+"title": "Pythagorean Theorem",
+"content": "In a right triangle, a\u00b2 + b\u00b2 = c\u00b2.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -4699
+},
+{
+"title": "Exponent Rules",
+"content": "To multiply powers with the same base, add the exponents.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -2759
+},
+{
+"title": "Tonal Language",
+"content": "Tone affects meaning in tonal languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -6697
+},
+{
+"title": "Monetary Policy",
+"content": "Monetary policy controls money supply.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -8888
+},
+{
+"title": "Conditional",
+"content": "Conditionals control flow based on conditions.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -4747
+},
+{
+"title": "Marketing Mix",
+"content": "Product, price, place, and promotion make up the 4 Ps.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -5587
+},
+{
+"title": "Revenue Definition",
+"content": "Revenue is the total income generated by a business.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -6570
+},
+{
+"title": "Photosynthesis",
+"content": "Photosynthesis is how plants convert sunlight into energy.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -6577
+},
+{
+"title": "Gravity",
+"content": "Gravity is a force that pulls objects toward one another.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -9264
+},
+{
+"title": "SWOT Analysis",
+"content": "Strengths, weaknesses, opportunities, and threats.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -8024
+},
+{
+"title": "Cash Flow",
+"content": "Cash flow is the net amount of cash moving into and out of a business.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -4894
+},
+{
+"title": "Cubism",
+"content": "Cubism breaks subjects into geometric forms.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -3206
+},
+{
+"title": "Elasticity",
+"content": "Elasticity measures responsiveness to price.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -1342
+},
+{
+"title": "Sound Waves",
+"content": "Sound travels through air as mechanical waves.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -1075
+},
+{
+"title": "Prime Numbers",
+"content": "A prime number has exactly two positive divisors: 1 and itself.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -5728
+},
+{
+"title": "Speed of Light",
+"content": "Light travels at approximately 299,792 km per second in a vacuum.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -146
+},
+{
+"title": "Market Economy",
+"content": "Prices are determined by the market.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -3169
+},
+{
+"title": "Labor Market",
+"content": "Where supply and demand for labor interact.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -435
+},
+{
+"title": "Sculpture",
+"content": "Sculpture is three-dimensional art.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -580
+},
+{
+"title": "Recursion",
+"content": "A function that calls itself is recursive.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -7031
+},
+{
+"title": "False Friends",
+"content": "Words that look similar in different languages but differ in meaning.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -9233
+},
+{
+"title": "Entrepreneurship",
+"content": "Entrepreneurship involves launching and managing a business.",
+"category": "Business",
+"imageFileName": "",
+"timestampOffset": -6903
+},
+{
+"title": "Bilingualism",
+"content": "Bilingual people speak two languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -2568
+},
+{
+"title": "Array",
+"content": "An array stores multiple values.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -5354
+},
+{
+"title": "Trade Balance",
+"content": "Difference between exports and imports.",
+"category": "Economics",
+"imageFileName": "",
+"timestampOffset": -6313
+},
+{
+"title": "Object-Oriented Programming",
+"content": "OOP organizes code using classes and objects.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -6405
+},
+{
+"title": "Speed of Light",
+"content": "Light travels at approximately 299,792 km per second in a vacuum.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -6087
+},
+{
+"title": "Fibonacci Numbers",
+"content": "Each Fibonacci number is the sum of the two preceding ones.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -3590
+},
+{
+"title": "Photosynthesis",
+"content": "Photosynthesis is how plants convert sunlight into energy.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -1366
+},
+{
+"title": "Photosynthesis",
+"content": "Photosynthesis is how plants convert sunlight into energy.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -3686
+},
+{
+"title": "Logarithms",
+"content": "Logarithms are the inverse operation of exponentiation.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -7376
+},
+{
+"title": "Evolution",
+"content": "Evolution is change in the heritable traits of biological populations over generations.",
+"category": "Science",
+"imageFileName": "",
+"timestampOffset": -7399
+},
+{
+"title": "Array",
+"content": "An array stores multiple values.",
+"category": "Computer Science",
+"imageFileName": "",
+"timestampOffset": -9876
+},
+{
+"title": "Translation",
+"content": "Translation conveys meaning between languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -8185
+},
+{
+"title": "Latin Roots",
+"content": "Many English words come from Latin.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -4836
+},
+{
+"title": "Impressionism",
+"content": "Impressionism captures light and movement in art.",
+"category": "Arts",
+"imageFileName": "",
+"timestampOffset": -8813
+},
+{
+"title": "Translation",
+"content": "Translation conveys meaning between languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -2867
+},
+{
+"title": "Exponent Rules",
+"content": "To multiply powers with the same base, add the exponents.",
+"category": "Math",
+"imageFileName": "",
+"timestampOffset": -1009
+},
+{
+"title": "Tonal Language",
+"content": "Tone affects meaning in tonal languages.",
+"category": "Languages",
+"imageFileName": "",
+"timestampOffset": -8491
+}
+
+
+]
+}
