@@ -12,69 +12,137 @@ import Foundation
 struct PostView: View {
     let item: Item
     @State private var selectedAnswer: String? = nil
-
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
+        HStack(alignment: .top, spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(Color.gray.opacity(0.2))
+                    .frame(width: 44, height: 44)
                 Text(item.category.icon)
+                    .font(.title2)
+            }
+            
+            VStack(alignment: .leading, spacing: 8) {
                 Text(item.category.rawValue)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                Spacer()
-            }
-
-            Text(item.title)
-                .font(.headline)
-
-            if item.category == .quiz {
-                let answers = item.content.components(separatedBy: "|") // "Q?|A|B|C|Correct"
-                if answers.count >= 5 {
-                    Text(answers[0]) // the question
-                        .font(.body)
-                        .foregroundColor(.primary)
-
-                    ForEach(1..<4, id: \.self) { index in
-                        Button(action: {
-                            selectedAnswer = answers[index]
-                        }) {
-                            Text(answers[index])
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Color.blue.opacity(0.1))
-                                .cornerRadius(8)
+                
+                Text(item.title)
+                    .font(.headline)
+                
+                if item.category == .quiz {
+                    let answers = item.content.components(separatedBy: "|") // "Q?|A|B|C|Correct"
+                    if answers.count >= 5 {
+                        Text(answers[0]) // the question
+                            .font(.body)
+                            .foregroundColor(.primary)
+                        
+                        ForEach(1..<4, id: \.self) { index in
+                            Button(action: {
+                                selectedAnswer = answers[index]
+                            }) {
+                                Text(answers[index])
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.blue.opacity(0.1))
+                                    .cornerRadius(8)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
-                    }
-
-                    if let selected = selectedAnswer {
-                        if selected == answers[4] {
-                            Text("✅ Correct!")
-                                .foregroundColor(.green)
-                                .font(.footnote)
-                        } else {
-                            Text("❌ Incorrect. Correct answer: \(answers[4])")
-                                .foregroundColor(.red)
-                                .font(.footnote)
+                        
+                        if let selected = selectedAnswer {
+                            if selected == answers[4] {
+                                Text("✅ Correct!")
+                                    .foregroundColor(.green)
+                                    .font(.footnote)
+                            } else {
+                                Text("❌ Incorrect. Correct answer: \(answers[4])")
+                                    .foregroundColor(.red)
+                                    .font(.footnote)
+                            }
                         }
+                    } else {
+                        Text("⚠️ Invalid quiz format.")
+                            .foregroundColor(.orange)
+                            .font(.footnote)
                     }
                 } else {
-                    Text("⚠️ Invalid quiz format.")
-                        .foregroundColor(.orange)
-                        .font(.footnote)
+                    Text(item.content)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    
+                    if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
+                       let url = URL(string: urlString) {
+                        Link("Learn More", destination: url)
+                            .font(.footnote)
+                            .foregroundColor(.blue)
+                            .padding(.top, 4)
+                    } 
                 }
-            } else {
-                Text(item.content)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-
-                if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
-                   let url = URL(string: urlString) {
-                    Link("Learn More", destination: url)
-                        .font(.footnote)
-                        .foregroundColor(.blue)
-                        .padding(.top, 4)
-                } 
+                
+                if item.category == .quiz {
+                    HStack(spacing: 24) {
+                        Button(action: {
+                            // Like action
+                        }) {
+                            Image(systemName: "heart")
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Button(action: {
+                            // Forward/share action
+                        }) {
+                            Image(systemName: "paperplane")
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Button(action: {
+                            // Quote/reply action
+                        }) {
+                            Image(systemName: "bubble.right")
+                                .foregroundColor(.gray)
+                        }
+                        
+                        HStack(spacing: 4) {
+                            Image(systemName: "checkmark.circle")
+                                .foregroundColor(.green)
+                            Text("12") // Placeholder for correct count
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .font(.subheadline)
+                    .padding(.top, 8)
+                } else {
+                    HStack(spacing: 24) {
+                        Button(action: {
+                            // Like action
+                        }) {
+                            Image(systemName: "heart")
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Button(action: {
+                            // Forward/share action
+                        }) {
+                            Image(systemName: "paperplane")
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Button(action: {
+                            // Quote/reply action
+                        }) {
+                            Image(systemName: "bubble.right")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .font(.subheadline)
+                    .padding(.top, 8)
+                }
             }
+            
+            Spacer()
         }
         .padding()
         .background(Color(.systemBackground))
@@ -161,7 +229,7 @@ struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
         let container = try! ModelContainer(for: Item.self, configurations: config)
-
+        
         let sampleItems = [
             Item(title: "🎉 Preview Post 1",
                  content: "This is how your posts will look in the feed. Notice the clean layout and typography.",
@@ -172,11 +240,11 @@ struct FeedView_Previews: PreviewProvider {
                  category: .arts,
                  timestamp: Date(), url: "https://example.com/exhibition")
         ]
-
+        
         for item in sampleItems {
             container.mainContext.insert(item)
         }
-
+        
         return FeedView()
             .modelContainer(container)
     }
