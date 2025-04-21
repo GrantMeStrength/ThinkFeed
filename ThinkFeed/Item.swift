@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftData
-
+import SwiftUI
 
 
 @Model
@@ -17,7 +17,11 @@ class Item {
     var category: PostCategory
     var timestamp: Date
     var imageFileName: String?
-    var url: String? = nil 
+    var url: String? = nil
+    var image: Image? {
+        guard let name = imageFileName, !name.isEmpty else { return nil }
+        return Image(name)
+    }
     var isLiked: Bool = false
     var correctAnswerCount: Int = 0
 

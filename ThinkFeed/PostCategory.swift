@@ -11,7 +11,7 @@ enum PostCategory: String, Codable, CaseIterable {
     case app = "ThinkFeed"
     case technology = "Technology"
     case science = "Science"
-   case health = "Health"
+    case health = "Health"
     case business = "Business"
     case arts = "Arts"
     case math = "Math"
@@ -27,16 +27,16 @@ enum PostCategory: String, Codable, CaseIterable {
         case .app: return "👩‍💻"
         case .technology: return "💻"
         case .science: return "🔬"
-      case .health: return "🏥"
+        case .health: return "🏥"
         case .business: return "💼"
         case .arts: return "🎨"
-        case .math: return "🌟"
+        case .math: return "𝛑"
         case .education: return "📚"
         case .history: return "📜"
         case .computerScience: return "💻"
         case .languages: return "🌍"
         case .economics: return "💸"
-        case .quiz: return "🧠"
+        case .quiz: return "🤔"
         }
     }
 } 

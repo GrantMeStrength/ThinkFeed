@@ -230,7 +230,7 @@ struct FeedView_Previews: PreviewProvider {
                  timestamp: Date().addingTimeInterval(-7200)),
             Item(title: "🌈 Art Exhibition",
                  content: "Virtual art gallery opening this weekend!",
-                 category: .arts,
+                 category: .arts, 
                  timestamp: Date(), url: "https://example.com/exhibition")
         ]
         
