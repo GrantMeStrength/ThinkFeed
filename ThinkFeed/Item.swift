@@ -18,7 +18,8 @@ class Item {
     var timestamp: Date
     var imageFileName: String?
     var url: String? = nil 
-
+    var isLiked: Bool = false
+    var correctAnswerCount: Int = 0
 
     init(title: String, content: String, category: PostCategory, imageFileName: String? = nil, timestamp: Date = .now, url: String? = nil) {
         self.title = title
@@ -27,5 +28,7 @@ class Item {
         self.timestamp = timestamp
         self.imageFileName = imageFileName
         self.url = url
+        self.isLiked = isLiked
+        self.correctAnswerCount = correctAnswerCount
     }
 }

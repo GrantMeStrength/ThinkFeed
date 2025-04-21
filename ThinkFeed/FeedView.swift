@@ -11,6 +11,7 @@ import Foundation
 
 struct PostView: View {
     let item: Item
+    @Environment(\.modelContext) private var modelContext
     @State private var selectedAnswer: String? = nil
     
     var body: some View {
@@ -41,6 +42,14 @@ struct PostView: View {
                         ForEach(1..<4, id: \.self) { index in
                             Button(action: {
                                 selectedAnswer = answers[index]
+                                if answers[index] == answers[4] {
+                                    DispatchQueue.main.async {
+                                        if item.correctAnswerCount < Int.max {
+                                            item.correctAnswerCount += 1
+                                            try? modelContext.save()
+                                        }
+                                    }
+                                }
                             }) {
                                 Text(answers[index])
                                     .frame(maxWidth: .infinity)
@@ -78,68 +87,48 @@ struct PostView: View {
                             .font(.footnote)
                             .foregroundColor(.blue)
                             .padding(.top, 4)
-                    } 
+                    }
                 }
                 
-                if item.category == .quiz {
-                    HStack(spacing: 24) {
-                        Button(action: {
-                            // Like action
-                        }) {
-                            Image(systemName: "heart")
-                                .foregroundColor(.gray)
+                HStack(spacing: 24) {
+                    Button(action: {
+                        item.isLiked.toggle()
+                        do {
+                            try modelContext.save()
+                        } catch {
+                            print("❌ Failed to save: \(error.localizedDescription)")
                         }
-                        
-                        Button(action: {
-                            // Forward/share action
-                        }) {
-                            Image(systemName: "paperplane")
-                                .foregroundColor(.gray)
-                        }
-                        
-                        Button(action: {
-                            // Quote/reply action
-                        }) {
-                            Image(systemName: "bubble.right")
-                                .foregroundColor(.gray)
-                        }
-                        
+                    }) {
+                        Image(systemName: item.isLiked ? "heart.fill" : "heart")
+                            .foregroundColor(item.isLiked ? .red : .gray)
+                    }
+                    
+                    Button(action: {
+                        // Forward/share action
+                    }) {
+                        Image(systemName: "paperplane")
+                            .foregroundColor(.gray)
+                    }
+                    
+                    Button(action: {
+                        // Quote/reply action
+                    }) {
+                        Image(systemName: "bubble.right")
+                            .foregroundColor(.gray)
+                    }
+                    
+                    if item.category == .quiz {
                         HStack(spacing: 4) {
                             Image(systemName: "checkmark.circle")
                                 .foregroundColor(.green)
-                            Text("12") // Placeholder for correct count
+                            Text("\(item.correctAnswerCount)")
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                         }
                     }
-                    .font(.subheadline)
-                    .padding(.top, 8)
-                } else {
-                    HStack(spacing: 24) {
-                        Button(action: {
-                            // Like action
-                        }) {
-                            Image(systemName: "heart")
-                                .foregroundColor(.gray)
-                        }
-                        
-                        Button(action: {
-                            // Forward/share action
-                        }) {
-                            Image(systemName: "paperplane")
-                                .foregroundColor(.gray)
-                        }
-                        
-                        Button(action: {
-                            // Quote/reply action
-                        }) {
-                            Image(systemName: "bubble.right")
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    .font(.subheadline)
-                    .padding(.top, 8)
                 }
+                .font(.subheadline)
+                .padding(.top, 8)
             }
             
             Spacer()
@@ -156,6 +145,7 @@ struct FeedView: View {
     @Environment(\.modelContext) private var modelContext
     @AppStorage("hasLoadedInitialData") private var hasLoadedInitialData = false
     @AppStorage("selectedCategories") private var selectedCategoriesData: Data = try! JSONEncoder().encode(Set(PostCategory.allCases))
+    @AppStorage("showLikedOnly") private var showLikedOnly = false
     @State private var showingSettings = false
     @State private var showError = false
     @State private var errorMessage = ""
@@ -165,7 +155,10 @@ struct FeedView: View {
     }
     
     private var filteredItems: [Item] {
-        allItems.filter { selectedCategories.contains($0.category) }
+        allItems.filter {
+            selectedCategories.contains($0.category) &&
+            (!showLikedOnly || $0.isLiked)
+        }
     }
     
     var body: some View {

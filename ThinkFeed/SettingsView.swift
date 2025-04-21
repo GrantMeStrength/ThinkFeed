@@ -45,6 +45,15 @@ struct SettingsView: View {
                             }
                         }
                     }
+                   
+                    
+                }
+                
+                Section {
+                    Toggle("Show only liked posts", isOn: Binding(
+                        get: { UserDefaults.standard.bool(forKey: "showLikedOnly") },
+                        set: { UserDefaults.standard.set($0, forKey: "showLikedOnly") }
+                    ))
                 }
                 
                 Section {
