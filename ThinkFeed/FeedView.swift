@@ -165,7 +165,7 @@ struct FeedView_Previews: PreviewProvider {
         let sampleItems = [
             Item(title: "🎉 Preview Post 1",
                  content: "This is how your posts will look in the feed. Notice the clean layout and typography.",
-                 category: .technology,
+                 category: .app,
                  timestamp: Date().addingTimeInterval(-7200)),
             Item(title: "🌈 Art Exhibition",
                  content: "Virtual art gallery opening this weekend!",
@@ -187,7 +187,7 @@ struct PostView_Previews: PreviewProvider {
         PostView(item: Item(
             title: "Preview Post",
             content: "This is a preview of an individual post card. It shows how a single post looks in isolation.",
-            category: .technology,
+            category: .app,
             url: "https://example.com"
         ))
         .padding()
