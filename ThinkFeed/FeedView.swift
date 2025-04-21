@@ -78,7 +78,7 @@ struct PostView: View {
                     }
                 } else {
                     Text(item.content)
-                        .font(.body)
+                        .font(.callout)
                         .foregroundColor(.secondary)
                     
                     if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -136,7 +136,7 @@ struct PostView: View {
         .padding()
         .background(Color(.systemBackground))
         .cornerRadius(12)
-        .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
+        .shadow(color: Color.black.opacity(0.25), radius: 4, x: 0, y: 2)
     }
 }
 
