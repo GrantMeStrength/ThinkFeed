@@ -77,17 +77,19 @@ struct PostView: View {
                             .font(.footnote)
                     }
                 } else {
+                   
                     Text(item.content)
                         .font(.callout)
                         .foregroundColor(.secondary)
                     
-                    if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
-                       let url = URL(string: urlString) {
-                        Link("Learn More", destination: url)
-                            .font(.footnote)
-                            .foregroundColor(.blue)
-                            .padding(.top, 4)
+                    
+                    if let image = item.image {
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(8)
                     }
+                    
                 }
                 
                 HStack(spacing: 24) {
@@ -115,6 +117,14 @@ struct PostView: View {
                     }) {
                         Image(systemName: "bubble.right")
                             .foregroundColor(.gray)
+                    }
+                    
+                    if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
+                       let url = URL(string: urlString) {
+                        Link(destination: url) {
+                            Image(systemName: "link")
+                                .foregroundColor(.blue)
+                        }
                     }
                     
                     if item.category == .quiz {
@@ -227,10 +237,11 @@ struct FeedView_Previews: PreviewProvider {
             Item(title: "🎉 Preview Post 1",
                  content: "This is how your posts will look in the feed. Notice the clean layout and typography.",
                  category: .app,
+                 imageFileName: "welcome",
                  timestamp: Date().addingTimeInterval(-7200)),
             Item(title: "🌈 Art Exhibition",
                  content: "Virtual art gallery opening this weekend!",
-                 category: .arts, 
+                 category: .arts,
                  timestamp: Date(), url: "https://example.com/exhibition")
         ]
         
@@ -249,7 +260,9 @@ struct PostView_Previews: PreviewProvider {
             title: "Preview Post",
             content: "This is a preview of an individual post card. It shows how a single post looks in isolation.",
             category: .app,
+            imageFileName: "welcome",
             url: "https://example.com"
+            
         ))
         .padding()
     }

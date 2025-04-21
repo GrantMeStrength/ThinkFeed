@@ -1,9 +1,9 @@
 {
 "posts": [
 
-    {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"","timestampOffset":100000000,"url": "https://www.google.com", "image" : "welcome.png"},
+    {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"welcome","timestampOffset":100000000, "url": "https://www.google.com"},
 
-{"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow.", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000,"url": "https://www.google.com"},
+{"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow. There are pictures, too!", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000, "url": "https://www.google.com"},
 
 {"title": "The Future of AI", "content": "Exploring the latest developments in artificial intelligence and machine learning. From neural networks to deep learning, the field is evolving rapidly.", "category": "Science", "imageFileName": "ai_future.jpg", "timestampOffset": -3600},
        {"title": "Did You Know? Space Facts", "content": "A day on Venus is longer than its year! Venus takes 243 Earth days to rotate on its axis but only 225 Earth days to orbit the Sun.", "category": "Science", "timestampOffset": -3200, "url": "https://nasa.gov/venus"},
