@@ -20,6 +20,7 @@ enum PostCategory: String, Codable, CaseIterable {
     case computerScience = "Computer Science"
     case languages = "Languages"
     case economics = "Economics"
+    case quiz = "Quiz"
     
     var icon: String {
         switch self {
@@ -35,6 +36,7 @@ enum PostCategory: String, Codable, CaseIterable {
         case .computerScience: return "💻"
         case .languages: return "🌍"
         case .economics: return "💸"
+        case .quiz: return "🧠"
         }
     }
 } 

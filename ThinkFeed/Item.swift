@@ -11,18 +11,21 @@ import SwiftData
 
 
 @Model
-final class Item {
-    var id: UUID
+class Item {
     var title: String
     var content: String
-    var timestamp: Date
     var category: PostCategory
-    
-    init(title: String, content: String, category: PostCategory = .app, timestamp: Date = Date()) {
-        self.id = UUID()
+    var timestamp: Date
+    var imageFileName: String?
+    var url: String? = nil 
+
+
+    init(title: String, content: String, category: PostCategory, imageFileName: String? = nil, timestamp: Date = .now, url: String? = nil) {
         self.title = title
         self.content = content
         self.category = category
         self.timestamp = timestamp
+        self.imageFileName = imageFileName
+        self.url = url
     }
 }

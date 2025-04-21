@@ -11,7 +11,8 @@ import Foundation
 
 struct PostView: View {
     let item: Item
-    
+    @State private var selectedAnswer: String? = nil
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
@@ -20,16 +21,60 @@ struct PostView: View {
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 Spacer()
-                Text(item.timestamp, style: .relative)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
             }
-            
+
             Text(item.title)
                 .font(.headline)
-            Text(item.content)
-                .font(.body)
-                .foregroundColor(.secondary)
+
+            if item.category == .quiz {
+                let answers = item.content.components(separatedBy: "|") // "Q?|A|B|C|Correct"
+                if answers.count >= 5 {
+                    Text(answers[0]) // the question
+                        .font(.body)
+                        .foregroundColor(.primary)
+
+                    ForEach(1..<4, id: \.self) { index in
+                        Button(action: {
+                            selectedAnswer = answers[index]
+                        }) {
+                            Text(answers[index])
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.blue.opacity(0.1))
+                                .cornerRadius(8)
+                        }
+                        .buttonStyle(.plain)
+                    }
+
+                    if let selected = selectedAnswer {
+                        if selected == answers[4] {
+                            Text("✅ Correct!")
+                                .foregroundColor(.green)
+                                .font(.footnote)
+                        } else {
+                            Text("❌ Incorrect. Correct answer: \(answers[4])")
+                                .foregroundColor(.red)
+                                .font(.footnote)
+                        }
+                    }
+                } else {
+                    Text("⚠️ Invalid quiz format.")
+                        .foregroundColor(.orange)
+                        .font(.footnote)
+                }
+            } else {
+                Text(item.content)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+
+                if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
+                   let url = URL(string: urlString) {
+                    Link("Learn More", destination: url)
+                        .font(.footnote)
+                        .foregroundColor(.blue)
+                        .padding(.top, 4)
+                } 
+            }
         }
         .padding()
         .background(Color(.systemBackground))
@@ -41,6 +86,7 @@ struct PostView: View {
 struct FeedView: View {
     @Query(sort: \Item.timestamp, order: .reverse) private var allItems: [Item]
     @Environment(\.modelContext) private var modelContext
+    @AppStorage("hasLoadedInitialData") private var hasLoadedInitialData = false
     @AppStorage("selectedCategories") private var selectedCategoriesData: Data = try! JSONEncoder().encode(Set(PostCategory.allCases))
     @State private var showingSettings = false
     @State private var showError = false
@@ -83,9 +129,10 @@ struct FeedView: View {
                 SettingsView()
             }
             .task {
-               // if allItems.isEmpty {
+                if !hasLoadedInitialData && allItems.isEmpty {
                     loadSampleData()
-                //}
+                    hasLoadedInitialData = true
+                }
             }
             .alert("Error", isPresented: $showError) {
                 Button("OK", role: .cancel) {}
@@ -110,46 +157,39 @@ struct FeedView: View {
     }
 }
 
-#Preview {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: Item.self, configurations: config)
-    
-    // Add sample items with different categories and timestamps
-    let sampleItems = [
-        Item(title: "🎉 Preview Post 1", 
-             content: "This is how your posts will look in the feed. Notice the clean layout and typography.",
-             category: .technology,
-             timestamp: Date().addingTimeInterval(-7200)),
-        
-        Item(title: "📱 Latest Tech Trends", 
-             content: "SwiftUI makes it easy to create beautiful, responsive interfaces.",
-             category: .technology,
-             timestamp: Date().addingTimeInterval(-3600)),
-        
-        Item(title: "💡 Science Discovery", 
-             content: "Breaking news in quantum computing research.",
-             category: .science,
-             timestamp: Date().addingTimeInterval(-1800)),
-        
-        Item(title: "🌈 Art Exhibition", 
-             content: "Virtual art gallery opening this weekend!",
-             category: .arts,
-             timestamp: Date())
-    ]
-    
-    for item in sampleItems {
-        container.mainContext.insert(item)
+struct FeedView_Previews: PreviewProvider {
+    static var previews: some View {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try! ModelContainer(for: Item.self, configurations: config)
+
+        let sampleItems = [
+            Item(title: "🎉 Preview Post 1",
+                 content: "This is how your posts will look in the feed. Notice the clean layout and typography.",
+                 category: .technology,
+                 timestamp: Date().addingTimeInterval(-7200)),
+            Item(title: "🌈 Art Exhibition",
+                 content: "Virtual art gallery opening this weekend!",
+                 category: .arts,
+                 timestamp: Date(), url: "https://example.com/exhibition")
+        ]
+
+        for item in sampleItems {
+            container.mainContext.insert(item)
+        }
+
+        return FeedView()
+            .modelContainer(container)
     }
-    
-    return FeedView()
-        .modelContainer(container)
 }
 
-#Preview("Post Card") {
-    PostView(item: Item(
-        title: "Preview Post",
-        content: "This is a preview of an individual post card. It shows how a single post looks in isolation.",
-        category: .technology
-    ))
-    .padding()
+struct PostView_Previews: PreviewProvider {
+    static var previews: some View {
+        PostView(item: Item(
+            title: "Preview Post",
+            content: "This is a preview of an individual post card. It shows how a single post looks in isolation.",
+            category: .technology,
+            url: "https://example.com"
+        ))
+        .padding()
+    }
 }
