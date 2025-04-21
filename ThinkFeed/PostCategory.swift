@@ -21,6 +21,11 @@ enum PostCategory: String, Codable, CaseIterable {
     case languages = "Languages"
     case economics = "Economics"
     case quiz = "Quiz"
+    case physics = "Physics"
+    case chemistry = "Chemistry"
+    case biology = "Biology"
+    case anatomy = "Anatomy"
+   
     
     var icon: String {
         switch self {
@@ -37,6 +42,10 @@ enum PostCategory: String, Codable, CaseIterable {
         case .languages: return "🌍"
         case .economics: return "💸"
         case .quiz: return "🤔"
+        case .physics: return "🔭"      // Telescope – for space, observation, physics exploration
+        case .chemistry: return "🧪"    // Test tube – classic chemistry lab gear
+        case .biology: return "🧬"      // DNA strand – life sciences, genetics
+        case .anatomy: return "🫀"      // Anatomical heart – human body focus  
         }
     }
 } 

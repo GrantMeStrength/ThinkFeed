@@ -4,10 +4,652 @@
     {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"welcome","timestampOffset":100000000, "url": "https://www.google.com"},
 
 {"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow. There are pictures, too!", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000, "url": "https://www.google.com"},
+    
+    {
+           "title": "Your Cells Use Molecular Motors \ud83c\udfc3",
+           "content": "Tiny protein motors like kinesin 'walk' along microtubules carrying cargo inside your cells.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -6831,
+           "url": "https://en.wikipedia.org/wiki/Kinesin"
+       },
+       {
+           "title": "Mitochondria Have Their Own DNA \ud83d\udd0b",
+           "content": "Mitochondria were once free-living bacteria and still carry their own DNA. They\u2019re inherited from your mother!",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -1480,
+           "url": "https://en.wikipedia.org/wiki/Mitochondrion"
+       },
+       {
+           "title": "CRISPR Edits Genes \u2702\ufe0f",
+           "content": "CRISPR is a revolutionary tool that lets scientists cut and rewrite DNA with precision.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -6966,
+           "url": "https://en.wikipedia.org/wiki/CRISPR"
+       },
+       {
+           "title": "There\u2019s More Bacteria Than You \ud83e\udda0",
+           "content": "Bacterial cells in and on your body outnumber your human cells. Most are harmless or even helpful!",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -2064,
+           "url": "https://en.wikipedia.org/wiki/Human_microbiome"
+       },
+       {
+           "title": "You Started As One Cell \ud83d\udc76",
+           "content": "You began as a single fertilized egg that divided and specialized into trillions of cells.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -2046,
+           "url": "https://en.wikipedia.org/wiki/Zygote"
+       },
+       {
+           "title": "Some Animals Can Regrow Organs \ud83e\udd8e",
+           "content": "Axolotls and some lizards can regenerate limbs, tails, and even parts of their hearts or brains.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -3346,
+           "url": "https://en.wikipedia.org/wiki/Regeneration_(biology)"
+       },
+       {
+           "title": "Proteins Fold Like Origami \ud83e\uddec",
+           "content": "A protein\u2019s function depends on its 3D shape, which folds spontaneously based on its amino acid sequence.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -3856,
+           "url": "https://en.wikipedia.org/wiki/Protein_folding"
+       },
+       {
+           "title": "Photosynthesis Powers Life \ud83c\udf3f",
+           "content": "Plants convert sunlight, water, and CO\u2082 into oxygen and sugar. Without it, there\u2019d be no food or air!",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -8043,
+           "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+       },
+       {
+           "title": "Your Genome Has 'Junk' DNA \ud83e\udde9",
+           "content": "Over 98% of your DNA doesn\u2019t code for proteins. Some of it regulates genes, but a lot is still mysterious.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -2385,
+           "url": "https://en.wikipedia.org/wiki/Non-coding_DNA"
+       },
+       {
+           "title": "You Replace Your Skin Every Month \ud83e\uddd6",
+           "content": "Your body sheds around 30,000 skin cells every minute and replaces your entire outer layer monthly.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -9381,
+           "url": "https://en.wikipedia.org/wiki/Skin"
+       },
+       {
+           "title": "Cell Communication = Chemical Texting \ud83d\udcf1",
+           "content": "Cells talk to each other using chemical signals like hormones and neurotransmitters.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -7373,
+           "url": "https://en.wikipedia.org/wiki/Cell_signaling"
+       },
+       {
+           "title": "Embryos Have Gills and Tails \ud83d\udc23",
+           "content": "Human embryos briefly develop structures like tails and pharyngeal arches \u2014 a reminder of our evolutionary past.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -5500,
+           "url": "https://en.wikipedia.org/wiki/Human_embryogenesis"
+       },
+       {
+           "title": "Blood Types Are Sugary Flags \ud83e\ude78",
+           "content": "Your blood type depends on sugar molecules on your red blood cells. That\u2019s why mixing types can be dangerous.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -9272,
+           "url": "https://en.wikipedia.org/wiki/Blood_type"
+       },
+       {
+           "title": "DNA is 2 Meters Long! \ud83e\uddf5",
+           "content": "Each of your cells contains about 2 meters of DNA coiled into the nucleus. That\u2019s 200 billion km in your whole body!",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -4173,
+           "url": "https://en.wikipedia.org/wiki/DNA"
+       },
+       {
+           "title": "RNA Viruses Mutate Fast \ud83e\uddec",
+           "content": "Viruses like flu and COVID mutate rapidly because RNA polymerases lack error correction.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -8789,
+           "url": "https://en.wikipedia.org/wiki/RNA_virus"
+       },
+       {
+           "title": "Neurons Don\u2019t Touch \u2728",
+           "content": "Neurons communicate across tiny gaps called synapses, using chemicals to pass signals between them.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -7222,
+           "url": "https://en.wikipedia.org/wiki/Synapse"
+       },
+       {
+           "title": "Telomeres Count Your Cell's Age \u23f3",
+           "content": "Telomeres are caps on chromosomes that get shorter with each cell division. When they run out, the cell dies or stops dividing.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -2942,
+           "url": "https://en.wikipedia.org/wiki/Telomere"
+       },
+       {
+           "title": "Gene Expression is Like a Dimmer Switch \ud83c\udf9a\ufe0f",
+           "content": "Genes aren\u2019t just on or off \u2014 cells can control how strongly a gene is expressed based on needs.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -6164,
+           "url": "https://en.wikipedia.org/wiki/Gene_expression"
+       },
+       {
+           "title": "Viruses Aren\u2019t Really Alive \ud83e\udda0",
+           "content": "Viruses don\u2019t eat, breathe, or reproduce on their own. They hijack your cells to do the work!",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -9457,
+           "url": "https://en.wikipedia.org/wiki/Virus"
+       },
+       {
+           "title": "Evolution Never Stops \ud83d\udd01",
+           "content": "Even today, species \u2014 including humans \u2014 are constantly adapting and changing in response to their environment.",
+           "category": "Biology",
+           "imageFileName": "",
+           "timestampOffset": -5301,
+           "url": "https://en.wikipedia.org/wiki/Evolution"
+       },
+    
+    
+    {
+           "title": "Everything\u2019s Made of Quarks \ud83e\uddf1",
+           "content": "Protons and neutrons are made of even smaller particles called quarks. They're held together by the strong force!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -9669,
+           "url": "https://en.wikipedia.org/wiki/Quark"
+       },
+       {
+           "title": "Electron Orbitals Aren\u2019t Orbits \u269b\ufe0f",
+           "content": "Electrons don't orbit like planets \u2014 they exist in 'clouds' of probability called orbitals.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -5927,
+           "url": "https://en.wikipedia.org/wiki/Atomic_orbital"
+       },
+       {
+           "title": "Water is Weird \ud83d\udca7",
+           "content": "Water expands when it freezes \u2014 unlike most substances \u2014 and that's why ice floats.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -4171,
+           "url": "https://en.wikipedia.org/wiki/Properties_of_water"
+       },
+       {
+           "title": "Acids and Bases Have Opposite Powers \u2696\ufe0f",
+           "content": "Acids donate protons (H\u207a), bases accept them. The pH scale measures this balance.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -2510,
+           "url": "https://en.wikipedia.org/wiki/Acid\u2013base_reaction"
+       },
+       {
+           "title": "Mole Isn\u2019t an Animal \ud83d\udc39",
+           "content": "A mole is 6.022 \u00d7 10\u00b2\u00b3 of something \u2014 it\u2019s how chemists count atoms and molecules.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -7269,
+           "url": "https://en.wikipedia.org/wiki/Mole_(unit)"
+       },
+       {
+           "title": "Enzymes Speed Things Up \ud83d\udd2c",
+           "content": "Catalysts like enzymes lower activation energy, making reactions happen faster \u2014 without being used up.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -5510,
+           "url": "https://en.wikipedia.org/wiki/Catalysis"
+       },
+       {
+           "title": "Radioactive Decay is Predictable \ud83d\udcc9",
+           "content": "Unstable atoms decay over time with a constant half-life. That\u2019s how we date ancient fossils!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -9537,
+           "url": "https://en.wikipedia.org/wiki/Radioactive_decay"
+       },
+       {
+           "title": "Bond Types = Chemical Behavior \ud83e\uddea",
+           "content": "Covalent, ionic, and metallic bonds all behave differently. They determine everything from melting point to conductivity.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -2487,
+           "url": "https://en.wikipedia.org/wiki/Chemical_bond"
+       },
+       {
+           "title": "Allotropes Are Same Element, Different Form \ud83c\udf11\ud83d\udc8e",
+           "content": "Graphite and diamond are both carbon, but arranged differently. That\u2019s why one is soft and the other super hard!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -8721,
+           "url": "https://en.wikipedia.org/wiki/Allotropy"
+       },
+       {
+           "title": "Avogadro Was Right \ud83d\udce6",
+           "content": "Equal volumes of gases, at the same temperature and pressure, contain the same number of molecules.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -3157,
+           "url": "https://en.wikipedia.org/wiki/Avogadro%27s_law"
+       },
+       {
+           "title": "Electronegativity Predicts Reactivity \u26a1",
+           "content": "The more electronegative an element, the more it pulls electrons in a bond. Fluorine is the king of this!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -2198,
+           "url": "https://en.wikipedia.org/wiki/Electronegativity"
+       },
+       {
+           "title": "Periodic Table Predicts the Future \ud83d\udd2e",
+           "content": "The periodic table\u2019s layout shows trends in reactivity, size, and properties \u2014 it's like a cheat sheet for chemists.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -2862,
+           "url": "https://en.wikipedia.org/wiki/Periodic_table"
+       },
+       {
+           "title": "pH = Power of Hydrogen \ud83d\udd0d",
+           "content": "A pH of 7 is neutral. Lower is acidic, higher is basic \u2014 and every number is 10\u00d7 stronger than the next!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -3413,
+           "url": "https://en.wikipedia.org/wiki/PH"
+       },
+       {
+           "title": "Organic Chemistry = Carbon Chains \ud83e\uddec",
+           "content": "Organic chemistry studies carbon-based compounds \u2014 the basis of life and most pharmaceuticals.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -9625,
+           "url": "https://en.wikipedia.org/wiki/Organic_chemistry"
+       },
+       {
+           "title": "Electrons Jump Energy Levels \ud83c\udfa2",
+           "content": "Electrons absorb or release energy to jump between energy levels. That\u2019s how neon signs glow!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -7223,
+           "url": "https://en.wikipedia.org/wiki/Electron_transition"
+       },
+       {
+           "title": "Oxidation Isn\u2019t Just Rust \ud83d\udd29",
+           "content": "Oxidation is when atoms lose electrons \u2014 it happens in fire, batteries, and metabolism.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -4362,
+           "url": "https://en.wikipedia.org/wiki/Redox"
+       },
+       {
+           "title": "Polymers Are Long Chain Molecules \ud83e\uddf5",
+           "content": "Plastics are made of repeating units called polymers \u2014 some natural, some man-made.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -9440,
+           "url": "https://en.wikipedia.org/wiki/Polymer"
+       },
+       {
+           "title": "Entropy Measures Disorder \ud83d\udd04",
+           "content": "Entropy is a measure of chaos in a system \u2014 and it always increases over time.",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -2775,
+           "url": "https://en.wikipedia.org/wiki/Entropy"
+       },
+       {
+           "title": "Superacids Melt Almost Anything \ud83d\udca5",
+           "content": "Some acids are millions of times stronger than sulfuric acid. They can dissolve even hydrocarbons!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -9541,
+           "url": "https://en.wikipedia.org/wiki/Superacid"
+       },
+       {
+           "title": "Chemiluminescence = Glow Chemistry \u2728",
+           "content": "Some chemical reactions produce light without heat \u2014 that\u2019s how glow sticks work!",
+           "category": "Chemistry",
+           "imageFileName": "",
+           "timestampOffset": -3027,
+           "url": "https://en.wikipedia.org/wiki/Chemiluminescence"
+       },
+    
+    {
+        "title": "Relativity of Simultaneity \ud83d\udd70\ufe0f",
+        "content": "Two events that happen at the same time in one frame of reference may not be simultaneous in another. Welcome to Einstein\u2019s world!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -9709,
+        "url": "https://en.wikipedia.org/wiki/Relativity_of_simultaneity"
+    },
+    {
+        "title": "Time Dilation is Real \u23f3",
+        "content": "Astronauts on the ISS age a tiny bit slower than people on Earth due to time dilation. Gravity and motion mess with time!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -2791,
+        "url": "https://en.wikipedia.org/wiki/Time_dilation"
+    },
+    {
+        "title": "Photons Have No Mass \u2014 But Momentum! \u26a1",
+        "content": "Photons are massless, but they still carry momentum. That\u2019s how solar sails work!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -4069,
+        "url": "https://en.wikipedia.org/wiki/Photon"
+    },
+    {
+        "title": "Quantum Tunneling: Ghost Particles \ud83d\udeaa",
+        "content": "In quantum mechanics, particles can 'tunnel' through barriers they shouldn\u2019t be able to cross. It\u2019s like walking through walls \u2014 statistically!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -6350,
+        "url": "https://en.wikipedia.org/wiki/Quantum_tunnelling"
+    },
+    {
+        "title": "Heisenberg Was Sure About Uncertainty \ud83e\udd2f",
+        "content": "You can\u2019t precisely know both a particle\u2019s position and momentum. The more you know one, the less you know the other.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -9973,
+        "url": "https://en.wikipedia.org/wiki/Uncertainty_principle"
+    },
+    {
+        "title": "The Universe Has No Center \ud83c\udf0c",
+        "content": "Every point in the expanding universe sees everything else moving away. There\u2019s no 'center' \u2014 it\u2019s expanding everywhere!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -1538,
+        "url": "https://en.wikipedia.org/wiki/Metric_expansion_of_space"
+    },
+    {
+        "title": "You\u2019re Mostly Empty Space \ud83d\udca8",
+        "content": "If atoms were the size of stadiums, their nuclei would be tiny marbles in the center. Most of you is void!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -3207,
+        "url": "https://en.wikipedia.org/wiki/Atomic_nucleus"
+    },
+    {
+        "title": "Antimatter Exists \u2014 Just Rarely \ud83e\uddff",
+        "content": "Every particle has an opposite called an antiparticle. If they meet, they annihilate!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -7101,
+        "url": "https://en.wikipedia.org/wiki/Antimatter"
+    },
+    {
+        "title": "The Double-Slit Mystery \ud83c\udfaf",
+        "content": "Particles act like waves and can interfere with themselves. Until you watch \u2014 then they behave like particles!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -4207,
+        "url": "https://en.wikipedia.org/wiki/Double-slit_experiment"
+    },
+    {
+        "title": "Absolute Zero = No Motion? Not Quite \u2744\ufe0f",
+        "content": "At absolute zero, atoms reach their lowest energy \u2014 but thanks to quantum mechanics, they never completely stop moving.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -6066,
+        "url": "https://en.wikipedia.org/wiki/Absolute_zero"
+    },
+    {
+        "title": "Black Holes Aren\u2019t Holes \ud83d\udd73\ufe0f",
+        "content": "They\u2019re extremely dense objects with gravity so strong, not even light escapes. They're not portals \u2014 they\u2019re prisons!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -7304,
+        "url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+        "title": "Gravity = Geometry \ud83d\udcd0",
+        "content": "Einstein showed that gravity is really the bending of spacetime by mass. Matter tells space how to curve, and space tells matter how to move.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -7899,
+        "url": "https://en.wikipedia.org/wiki/General_relativity"
+    },
+    {
+        "title": "Muon Magic: Detecting the Impossible \ud83e\uddea",
+        "content": "Muons are like heavy electrons and constantly shower Earth from space. Without relativity, they\u2019d decay before reaching the ground.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -9945,
+        "url": "https://en.wikipedia.org/wiki/Muon"
+    },
+    {
+        "title": "Schr\u00f6dinger's Cat Is Both Alive and Dead \ud83d\udc31",
+        "content": "In quantum theory, particles exist in multiple states until measured. So does the cat \u2014 until you open the box.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -1040,
+        "url": "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
+    },
+    {
+        "title": "Neutrinos Pass Right Through You \ud83d\udeb6",
+        "content": "Trillions of neutrinos zoom through your body every second. They barely interact with matter at all!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -6750,
+        "url": "https://en.wikipedia.org/wiki/Neutrino"
+    },
+    {
+        "title": "Planck Time: The Smallest Unit of Time \u231b",
+        "content": "Planck time is the shortest meaningful time interval \u2014 about 10^-43 seconds. It\u2019s the speed limit of time!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -2376,
+        "url": "https://en.wikipedia.org/wiki/Planck_time"
+    },
+    {
+        "title": "Lasers Are Organized Light \ud83d\udd26",
+        "content": "Lasers produce light waves that are all in sync. That\u2019s why they\u2019re so powerful and precise!",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -8497,
+        "url": "https://en.wikipedia.org/wiki/Laser"
+    },
+    {
+        "title": "Thermodynamics Never Lies \u2668\ufe0f",
+        "content": "The laws of thermodynamics govern energy, entropy, and heat. You can\u2019t win, you can\u2019t break even, and you can\u2019t get out of the game.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -1814,
+        "url": "https://en.wikipedia.org/wiki/Laws_of_thermodynamics"
+    },
+    {
+        "title": "Spacetime Isn\u2019t Just a Metaphor \ud83e\udde0",
+        "content": "Time and space are connected as one fabric \u2014 spacetime. Mess with one, and the other changes too.",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -3449,
+        "url": "https://en.wikipedia.org/wiki/Spacetime"
+    },
+    {
+        "title": "Faster Than Light? Maybe\u2026 \ud83d\udce1",
+        "content": "Some particles like tachyons are hypothetical and would travel faster than light \u2014 but no real evidence exists (yet).",
+        "category": "Physics",
+        "imageFileName": "",
+        "timestampOffset": -1959,
+        "url": "https://en.wikipedia.org/wiki/Tachyon"
+    },
+    
+    {
+            "title":"Infinity \u267e\ufe0f",
+            "content":"There are different sizes of infinity! Some infinities are bigger than others \u2014 seriously.",
+            "category":"Math",
+            "imageFileName":"",
+            "timestampOffset":-5295
+        },
+        {
+            "title":"Speed of Light",
+            "content":"Light travels at about 299,792 kilometers per second \u2014 fast enough to circle Earth 7.5 times in one second!",
+            "category":"Physics",
+            "imageFileName":"",
+            "timestampOffset":-5164
+        },
+        {
+            "title":"Table Salt",
+            "content":"The salt on your fries is made from two deadly elements: sodium (explosive) and chlorine (toxic gas). Together? Harmless!",
+            "category":"Chemistry",
+            "imageFileName":"",
+            "timestampOffset":-7238
+        },
+        {
+            "title":"Octopus Hearts \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f",
+            "content":"An octopus has *three* hearts \u2014 and two of them stop beating when it swims.",
+            "category":"Biology",
+            "imageFileName":"",
+            "timestampOffset":-6392
+        },
+        {
+            "title":"Brain Power",
+            "content":"Your brain uses about 20% of your body\u2019s energy \u2014 more than any other organ!",
+            "category":"Anatomy",
+            "imageFileName":"",
+            "timestampOffset":-7637
+        },
+        {
+            "title":"Napoleon Wasn\u2019t Short",
+            "content":"He was actually average height for his time \u2014 about 5'6\"!",
+            "category":"History",
+            "imageFileName":"",
+            "timestampOffset":-6146
+        },
+        {
+            "title":"Bananas Are Berries \ud83c\udf4c",
+            "content":"According to botany, bananas are berries \u2014 but strawberries aren\u2019t!",
+            "category":"Science",
+            "imageFileName":"",
+            "timestampOffset":-7511
+        },
+        {
+            "title":"First Computer Bug \ud83d\udc1b",
+            "content":"The first actual computer 'bug' was a real moth stuck in a relay in 1947.",
+            "category":"Computer Science",
+            "imageFileName":"",
+            "timestampOffset":-6620
+        },
+        {
+            "title":"Shakespeare Invented Words",
+            "content":"William Shakespeare invented over 1,700 words we still use today, like 'bedroom' and 'swagger'.",
+            "category":"Languages",
+            "imageFileName":"",
+            "timestampOffset":-8389
+        },
+        {
+            "title":"Van Gogh Sold One Painting",
+            "content":"In his lifetime, Vincent van Gogh only sold one painting \u2014 now they sell for millions.",
+            "category":"Arts",
+            "imageFileName":"",
+            "timestampOffset":-8903
+        },
+        {
+            "title":"Wants vs. Needs",
+            "content":"Economics is all about choices: what you *want* versus what you really *need*.",
+            "category":"Economics",
+            "imageFileName":"",
+            "timestampOffset":-7895
+        },
+        {
+            "title":"Pi Never Ends \ud83e\udd67",
+            "content":"The number \u03c0 (pi) goes on forever without repeating. Computers have calculated trillions of digits!",
+            "category":"Math",
+            "imageFileName":"",
+            "timestampOffset":-8502
+        },
+        {
+            "title":"You Glow in the Dark",
+            "content":"Your body emits tiny amounts of light \u2014 it's just too weak for our eyes to see.",
+            "category":"Biology",
+            "imageFileName":"",
+            "timestampOffset":-6400
+        },
+        {
+            "title":"Sound in Space?",
+            "content":"In space, no one can hear you scream \u2014 because sound needs a medium like air to travel.",
+            "category":"Physics",
+            "imageFileName":"",
+            "timestampOffset":-4603
+        },
+        {
+            "title":"T-Rex Time",
+            "content":"Tyrannosaurus rex lived closer in time to you than to the Stegosaurus!",
+            "category":"Science",
+            "imageFileName":"",
+            "timestampOffset":-4111
+        },
+        {
+            "title":"Coding is Language",
+            "content":"Learning to code is like learning a new language \u2014 but your computer is the one listening.",
+            "category":"Computer Science",
+            "imageFileName":"",
+            "timestampOffset":-7240
+        },
+        {
+            "title":"French Is Everywhere",
+            "content":"French is an official language in 29 countries \u2014 from France to Canada to parts of Africa!",
+            "category":"Languages",
+            "imageFileName":"",
+            "timestampOffset":-6284
+        },
+        {
+            "title":"Why Is Art So Expensive?",
+            "content":"Art prices aren\u2019t always about talent \u2014 it\u2019s often about fame, rarity, and hype.",
+            "category":"Arts",
+            "imageFileName":"",
+            "timestampOffset":-5132
+        },
+        {
+            "title":"Water\u2019s Weird",
+            "content":"Water expands when it freezes \u2014 that's why ice floats!",
+            "category":"Chemistry",
+            "imageFileName":"",
+            "timestampOffset":-6097
+        },
+        {
+            "title":"Supply and Demand",
+            "content":"When things are rare and people want them? Prices go up. That's supply and demand!",
+            "category":"Economics",
+            "imageFileName":"",
+            "timestampOffset":-8451
+        },
+    
+    {
+                "title": "Bananas Are Berries \ud83c\udf4c",
+                "content": "According to botany, bananas are berries \u2014 but strawberries aren\u2019t!",
+                "category": "Science",
+                "imageFileName": "",
+                "timestampOffset": -7511,
+                "url": "https://en.wikipedia.org/wiki/Banana"
+            },
+            {
+                "title": "Photosynthesis \ud83c\udf3f",
+                "content": "Photosynthesis is how plants convert sunlight, water, and CO\u2082 into oxygen and glucose.",
+                "category": "Science",
+                "imageFileName": "",
+                "timestampOffset": -9381,
+                "url": "https://en.wikipedia.org/wiki/Photosynthesis"
+            },
 
-{"title": "The Future of AI", "content": "Exploring the latest developments in artificial intelligence and machine learning. From neural networks to deep learning, the field is evolving rapidly.", "category": "Science", "imageFileName": "ai_future.jpg", "timestampOffset": -3600},
+
        {"title": "Did You Know? Space Facts", "content": "A day on Venus is longer than its year! Venus takes 243 Earth days to rotate on its axis but only 225 Earth days to orbit the Sun.", "category": "Science", "timestampOffset": -3200, "url": "https://nasa.gov/venus"},
-       {"title": "Healthy Living Tips", "content": "Simple ways to maintain a healthy lifestyle in our busy modern world. Remember to stay hydrated and take regular breaks from screen time.", "category": "Health", "imageFileName": "healthy_living.jpg", "timestampOffset": -1800},
+
        {"title": "Brain Health Quiz", "content": "Which food is known to boost brain function?|Candy|Pizza|Blueberries|Blueberries", "category": "Quiz", "timestampOffset": -1600},
        {"title": "Ocean Facts", "content": "The blue whale's heart is so big that a human could swim through its arteries! These magnificent creatures are the largest animals ever known to exist.", "category": "Science", "timestampOffset": -5400, "url": "https://oceanservice.noaa.gov/facts/"},
        {"title": "Tech History Quiz", "content": "Who is known as the first computer programmer?|Bill Gates|Ada Lovelace|Steve Jobs|Ada Lovelace", "category": "Quiz", "timestampOffset": -4800},
