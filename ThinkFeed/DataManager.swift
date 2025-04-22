@@ -45,6 +45,7 @@ class DataManager {
         return try uniquePosts.map { post in
             guard let category = PostCategory.allCases.first(where: { $0.rawValue.lowercased() == post.category.lowercased() }) else {
                 print("Error with category: \(post.category)")
+                print(post)
                 throw DataError.invalidCategory
             }
             

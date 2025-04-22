@@ -32,7 +32,7 @@ struct PostView: View {
                 Text(item.title)
                     .font(.headline)
                 
-                if item.category == .quiz {
+                if item.title.localizedCaseInsensitiveContains("quiz") {
                     let answers = item.content.components(separatedBy: "|") // "Q?|A|B|C|Correct"
                     if answers.count >= 5 {
                         Text(answers[0]) // the question
@@ -110,14 +110,14 @@ struct PostView: View {
                     }) {
                         Image(systemName: "paperplane")
                             .foregroundColor(.gray)
-                    }
+                    }.disabled(true)
                     
                     Button(action: {
                         // Quote/reply action
                     }) {
                         Image(systemName: "bubble.right")
                             .foregroundColor(.gray)
-                    }
+                    }.disabled(true)
                     
                     if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
                        let url = URL(string: urlString) {
@@ -127,7 +127,7 @@ struct PostView: View {
                         }
                     }
                     
-                    if item.category == .quiz {
+                    if item.title.localizedCaseInsensitiveContains("quiz") {
                         HStack(spacing: 4) {
                             Image(systemName: "checkmark.circle")
                                 .foregroundColor(.green)
@@ -171,6 +171,8 @@ struct FeedView: View {
         }
     }
     
+    // scrollTaskStarted removed
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -218,12 +220,14 @@ struct FeedView: View {
             let items = try DataManager.shared.loadSampleData()
             for item in items {
                 modelContext.insert(item)
+
             }
             try modelContext.save()
         } catch {
             errorMessage = "Failed to load sample data: \(error.localizedDescription)"
             showError = true
             print("Error loading sample data: \(error)")
+           
         }
     }
 }

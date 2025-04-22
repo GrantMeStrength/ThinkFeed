@@ -1,9 +1,372 @@
 {
 "posts": [
 
-    {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"welcome","timestampOffset":100000000, "url": "https://www.google.com"},
+    {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"welcome","timestampOffset":100000000, "url": ""},
 
-{"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow. There are pictures, too!", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000, "url": "https://www.google.com"},
+{"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow. There are pictures, too!", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000, "url": ""},
+    
+    
+    {
+            "title": "Inventor of Lambda Calculus",
+            "content": "Lambda calculus was invented by Alonzo Church in the 1930s to formalize the concept of computation.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -79318,
+            "url": "https://en.wikipedia.org/wiki/Lambda_calculus"
+        },
+        {
+            "title": "Just Three Concepts",
+            "content": "Lambda calculus has only three parts: variables, function definitions, and function applications.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -17060,
+            "url": ""
+        },
+        {
+            "title": "No Numbers Needed",
+            "content": "In pure lambda calculus, even numbers and booleans are expressed using only functions!",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -29177,
+            "url": ""
+        },
+        {
+            "title": "The Identity Function",
+            "content": "The simplest lambda function is \u03bbx.x \u2013 it returns whatever you give it.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -40847,
+            "url": ""
+        },
+        {
+            "title": "Turing Complete",
+            "content": "Despite its simplicity, lambda calculus is powerful enough to represent any computation.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -34568,
+            "url": "https://en.wikipedia.org/wiki/Turing_completeness"
+        },
+        {
+            "title": "Basis of Functional Languages",
+            "content": "Modern languages like Haskell, Lisp, and parts of Swift are built on the ideas of lambda calculus.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -74132,
+            "url": ""
+        },
+        {
+            "title": "Function Application",
+            "content": "In lambda calculus, calling a function is done by writing two expressions side by side: (f x).",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -37018,
+            "url": ""
+        },
+        {
+            "title": "Boolean Logic with Functions",
+            "content": "\u2018true\u2019 can be represented as \u03bbx.\u03bby.x and \u2018false\u2019 as \u03bbx.\u03bby.y.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -50086,
+            "url": ""
+        },
+        {
+            "title": "Church Encoding",
+            "content": "\u2018Church encoding\u2019 is a way to represent numbers, booleans, and data structures using only functions.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -31816,
+            "url": "https://en.wikipedia.org/wiki/Church_encoding"
+        },
+        {
+            "title": "The Y Combinator",
+            "content": "The Y Combinator is a lambda expression that enables recursion, even though lambda calculus has no named functions.",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -32174,
+            "url": "https://en.wikipedia.org/wiki/Fixed-point_combinator"
+        },
+        {
+            "title": "Quiz: Inventor",
+            "content": "Who invented lambda calculus?|Alan Turing|Alonzo Church|Kurt G\u00f6del|Alonzo Church",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -9424,
+            "url": ""
+        },
+        {
+            "title": "Quiz: Core Elements",
+            "content": "Which of these is NOT a core concept in lambda calculus?|Variables|Loops|Abstractions|Loops",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -70482,
+            "url": ""
+        },
+        {
+            "title": "Quiz: Identity Function",
+            "content": "What does \u03bbx.x return when given 5?|x|Nothing|5|5",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -32428,
+            "url": ""
+        },
+        {
+            "title": "Quiz: Application Style",
+            "content": "How is a function applied in lambda calculus?|With commas|Using parentheses around the argument|By placing the function and argument side by side|By placing the function and argument side by side",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -1620,
+            "url": ""
+        },
+        {
+            "title": "Quiz: Turing Power",
+            "content": "Why is lambda calculus important in computer science?|It looks cool|It can represent any computation|It uses Greek letters|It can represent any computation",
+            "category": "Computer Science",
+            "imageFileName": "",
+            "timestampOffset": -65385,
+            "url": ""
+        },
+        
+        {
+               "title": "Inventor of Lisp",
+               "content": "Lisp was invented by John McCarthy in 1958 as a practical mathematical notation for computer programs.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -45885,
+               "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
+           },
+           {
+               "title": "Second-Oldest Language",
+               "content": "Lisp is the second-oldest high-level programming language in widespread use, after Fortran.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -78489,
+               "url": ""
+           },
+           {
+               "title": "Code is Data",
+               "content": "In Lisp, code and data share the same structure \u2014 both are just lists. This makes it incredibly powerful for writing programs that write programs.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -55394,
+               "url": ""
+           },
+           {
+               "title": "Parentheses Everywhere",
+               "content": "Lisp uses a lot of parentheses. Every function call and data structure is wrapped in them!",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -60488,
+               "url": ""
+           },
+           {
+               "title": "Garbage Collection Pioneer",
+               "content": "Lisp was one of the first languages to implement automatic garbage collection.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -61011,
+               "url": ""
+           },
+           {
+               "title": "Macros Are Meta",
+               "content": "Lisp macros allow you to manipulate code as data, enabling you to extend the language itself.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -24955,
+               "url": "https://en.wikipedia.org/wiki/Macro_(computer_science)"
+           },
+           {
+               "title": "Recursive by Nature",
+               "content": "Lisp's list-processing power makes it ideal for recursive programming. It\u2019s built into its DNA.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -55727,
+               "url": ""
+           },
+           {
+               "title": "Homoiconicity",
+               "content": "Lisp is homoiconic, meaning its code has the same structure as its data \u2014 which is just lists of symbols.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -21162,
+               "url": "https://en.wikipedia.org/wiki/Homoiconicity"
+           },
+           {
+               "title": "The Eval Function",
+               "content": "Lisp has an `eval` function that can run code generated at runtime \u2014 powerful and dangerous!",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -82240,
+               "url": ""
+           },
+           {
+               "title": "S-Expressions",
+               "content": "Lisp code is written in S-expressions \u2014 nested parenthetical lists like `(add 1 2)`.",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -38156,
+               "url": "https://en.wikipedia.org/wiki/S-expression"
+           },
+           {
+               "title": "Quiz: Lisp Origin",
+               "content": "Who created Lisp?|Dennis Ritchie|Alan Turing|John McCarthy|John McCarthy",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -30322,
+               "url": ""
+           },
+           {
+               "title": "Quiz: Lisp Syntax",
+               "content": "What structure is used to represent both code and data in Lisp?|Arrays|Classes|Lists|Lists",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -59005,
+               "url": ""
+           },
+           {
+               "title": "Quiz: Language Power",
+               "content": "Which feature allows Lisp to modify its own structure?|Garbage Collection|Homoiconicity|Pointers|Homoiconicity",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -55035,
+               "url": ""
+           },
+           {
+               "title": "Quiz: Lisp Evaluation",
+               "content": "What does the `eval` function in Lisp do?|Compares values|Sorts lists|Executes code|Executes code",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -15201,
+               "url": ""
+           },
+           {
+               "title": "Quiz: Code Style",
+               "content": "What do Lisp programs heavily use?|Semicolons|Parentheses|Brackets|Parentheses",
+               "category": "Computer Science",
+               "imageFileName": "",
+               "timestampOffset": -9843,
+               "url": ""
+           },
+           {
+                   "title": "What Is an LLM?",
+                   "content": "A large language model (LLM) is an AI trained on vast text data to generate and understand language.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -78846,
+                   "url": "https://en.wikipedia.org/wiki/Large_language_model"
+               },
+               {
+                   "title": "Transformer Architecture",
+                   "content": "Modern LLMs like GPT are built on the transformer architecture, introduced by Google in 2017.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -23062,
+                   "url": "https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)"
+               },
+               {
+                   "title": "Tokens, Not Words",
+                   "content": "LLMs process text using tokens, which can be whole words, parts of words, or punctuation marks.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -48678,
+                   "url": ""
+               },
+               {
+                   "title": "Training Takes Time",
+                   "content": "Training a large language model can take weeks on thousands of GPUs and cost millions of dollars.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -78800,
+                   "url": ""
+               },
+               {
+                   "title": "Emergent Abilities",
+                   "content": "LLMs can develop unexpected capabilities, like solving logic puzzles or doing basic math, just from training on language.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -38376,
+                   "url": "https://arxiv.org/abs/2206.07682"
+               },
+               {
+                   "title": "Zero-shot Learning",
+                   "content": "LLMs can answer questions or follow instructions they weren\u2019t explicitly trained for \u2014 known as zero-shot learning.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -33760,
+                   "url": ""
+               },
+               {
+                   "title": "Fine-tuning",
+                   "content": "A pre-trained LLM can be fine-tuned on a specific dataset to specialize in a topic or task.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -43274,
+                   "url": ""
+               },
+               {
+                   "title": "Prompt Engineering",
+                   "content": "Crafting good prompts can dramatically improve how LLMs respond \u2014 that's called prompt engineering.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -19651,
+                   "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+               },
+               {
+                   "title": "Bias and Hallucination",
+                   "content": "LLMs can reflect societal biases in their training data and sometimes 'hallucinate' incorrect facts.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -19835,
+                   "url": "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+               },
+               {
+                   "title": "Tokens Have Limits",
+                   "content": "LLMs have a limit on how many tokens they can process at once. GPT-4-turbo supports over 100,000 tokens.",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -60640,
+                   "url": ""
+               },
+               {
+                   "title": "Quiz: What is an LLM?",
+                   "content": "What does LLM stand for in AI?|Low-Level Memory|Large Language Model|Logical Learning Machine|Large Language Model",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -1584,
+                   "url": ""
+               },
+               {
+                   "title": "Quiz: LLM Architecture",
+                   "content": "Which architecture is used in modern LLMs?|CNN|RNN|Transformer|Transformer",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -66507,
+                   "url": ""
+               },
+               {
+                   "title": "Quiz: Input Format",
+                   "content": "What do LLMs use as input units?|Sentences|Words|Tokens|Tokens",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -32496,
+                   "url": ""
+               },
+               {
+                   "title": "Quiz: AI Input",
+                   "content": "What is the practice of crafting effective AI inputs called?|Tokenization|Data Wrangling|Prompt Engineering|Prompt Engineering",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -86139,
+                   "url": ""
+               },
+               {
+                   "title": "Quiz: AI Risks",
+                   "content": "What is a risk of LLM outputs?|Memory Leaks|Hallucinations|Hardware Failure|Hallucinations",
+                   "category": "Computer Science",
+                   "imageFileName": "",
+                   "timestampOffset": -86947,
+                   "url": ""
+               },
     
     {
            "title": "Your Cells Use Molecular Motors \ud83c\udfc3",
@@ -650,19 +1013,19 @@
 
        {"title": "Did You Know? Space Facts", "content": "A day on Venus is longer than its year! Venus takes 243 Earth days to rotate on its axis but only 225 Earth days to orbit the Sun.", "category": "Science", "timestampOffset": -3200, "url": "https://nasa.gov/venus"},
 
-       {"title": "Brain Health Quiz", "content": "Which food is known to boost brain function?|Candy|Pizza|Blueberries|Blueberries", "category": "Quiz", "timestampOffset": -1600},
+       {"title": "Brain Health Quiz", "content": "Which food is known to boost brain function?|Candy|Pizza|Blueberries|Blueberries", "category": "Health", "timestampOffset": -1600},
        {"title": "Ocean Facts", "content": "The blue whale's heart is so big that a human could swim through its arteries! These magnificent creatures are the largest animals ever known to exist.", "category": "Science", "timestampOffset": -5400, "url": "https://oceanservice.noaa.gov/facts/"},
-       {"title": "Tech History Quiz", "content": "Who is known as the first computer programmer?|Bill Gates|Ada Lovelace|Steve Jobs|Ada Lovelace", "category": "Quiz", "timestampOffset": -4800},
+       {"title": "Tech History Quiz", "content": "Who is known as the first computer programmer?|Bill Gates|Ada Lovelace|Steve Jobs|Ada Lovelace", "category": "Computer Science", "timestampOffset": -4800},
        {"title": "Mindfulness Meditation", "content": "Taking just 10 minutes a day for meditation can significantly reduce stress and improve focus. Start with simple breathing exercises.", "category": "Health", "timestampOffset": -2400},
        {"title": "Amazing Architecture", "content": "The Sagrada Familia in Barcelona has been under construction since 1882! It's expected to be completed in 2026.", "category": "Arts", "timestampOffset": -1200, "url": "https://sagradafamilia.org"},
-       {"title": "Coding Challenge", "content": "What does HTML stand for?|High Tech Markup Language|Hyper Text Markup Language|Hybrid Text Making Language|Hyper Text Markup Language", "category": "Quiz", "timestampOffset": -900},
+       {"title": "Coding Quiz", "content": "What does HTML stand for?|High Tech Markup Language|Hyper Text Markup Language|Hybrid Text Making Language|Hyper Text Markup Language", "category": "Computer Science", "timestampOffset": -900},
        {"title": "Startup Success", "content": "90% of startups fail, but understanding why can help you succeed. Focus on market needs and sustainable growth.", "category": "Business", "timestampOffset": -6000},
-       {"title": "Language Learning Tip", "content": "Learning a new language? Try thinking directly in that language instead of translating from your native tongue.", "category": "Education", "timestampOffset": -3000},
+       {"title": "Language Learning Tip", "content": "Learning a new language? Try thinking directly in that language instead of translating from your native tongue.", "category": "Languages", "timestampOffset": -3000},
        {"title": "AI Ethics", "content": "As AI becomes more prevalent, ethical considerations in its development and deployment are crucial for society.", "category": "Technology", "timestampOffset": -2100},
-       {"title": "Geography Quiz", "content": "Which is the largest desert in the world?|Sahara|Arabian|Antarctic|Antarctic", "category": "Quiz", "timestampOffset": -1500},
+       {"title": "Geography Quiz", "content": "Which is the largest desert in the world?|Sahara|Arabian|Antarctic|Antarctic", "category": "Science", "timestampOffset": -1500},
        {"title": "Innovation History", "content": "The first computer mouse was made of wood! Douglas Engelbart invented it in the 1960s.", "category": "Technology", "timestampOffset": -4200},
        {"title": "Financial Wisdom", "content": "The rule of 72: Divide 72 by your investment's interest rate to estimate how many years it will take for your money to double.", "category": "Business", "timestampOffset": -5100},
-       {"title": "Art History Quiz", "content": "Who painted 'The Starry Night'?|Leonardo da Vinci|Claude Monet|Vincent van Gogh|Vincent van Gogh", "category": "Quiz", "timestampOffset": -3900},
+       {"title": "Art History Quiz", "content": "Who painted 'The Starry Night'?|Leonardo da Vinci|Claude Monet|Vincent van Gogh|Vincent van Gogh", "category": "Arts", "imageFileName": "starrynight", "timestampOffset": -63900},
   
 
 
@@ -670,7 +1033,7 @@
 {
 "title": "Quiz time!",
 "content": "Which planet is known as the Red Planet?|Venus|Mars|Jupiter|Mars",
-"category": "quiz",
+"category": "Science",
 "imageFileName": "",
 "timestampOffset": -6100,
 "url": ""
@@ -679,23 +1042,23 @@
 {
 "title": "Pop Quiz",
 "content": "What is the square root of 64?|6|8|10|8",
-"category": "quiz",
+"category": "Math",
 "imageFileName": "",
 "timestampOffset": -3125,
 "url": ""
 },
 {
-"title": "Quick quiz",
+"title": "Quick Quiz",
 "content": "What gas do plants absorb?|Oxygen|Carbon Dioxide|Nitrogen|Carbon Dioxide",
-"category": "quiz",
+"category": "Biology",
 "imageFileName": "",
 "timestampOffset": -4920,
 "url": ""
 },
 {
-"title": "Test yourself",
+"title": "History Quiz",
 "content": "Who was the first President of the U.S.?|Thomas Jefferson|George Washington|Abraham Lincoln|George Washington",
-"category": "quiz",
+"category": "History",
 "imageFileName": "",
 "timestampOffset": -5710,
 "url": ""
@@ -703,15 +1066,15 @@
 {
 "title": "Quiz",
 "content": "What is GDP?|Gross Domestic Product|General Debt Percentage|Government Development Plan|Gross Domestic Product",
-"category": "quiz",
+"category": "Economics",
 "imageFileName": "",
 "timestampOffset": -6590,
 "url": ""
 },
 {
-"title": "Quick quiz",
+"title": "Quick Quiz",
 "content": "What is 9 × 9?|81|72|99|81",
-"category": "quiz",
+"category": "Math",
 "imageFileName": "",
 "timestampOffset": -7610,
 "url": ""
@@ -719,7 +1082,7 @@
 {
 "title": "Quiz",
 "content": "What part of the cell contains DNA?|Nucleus|Cytoplasm|Ribosome|Nucleus",
-"category": "quiz",
+"category": "Biology",
 "imageFileName": "",
 "timestampOffset": -8350,
 "url": ""
@@ -727,7 +1090,7 @@
 {
 "title": "Quiz",
 "content": "When did World War II end?|1945|1939|1951|1945",
-"category": "quiz",
+"category": "History",
 "imageFileName": "",
 "timestampOffset": -2985,
 "url": ""
@@ -735,7 +1098,7 @@
 {
 "title": "Quiz",
 "content": "What is inflation?|Rise in prices|Drop in productivity|Government spending cut|Rise in prices",
-"category": "quiz",
+"category": "Economics",
 "imageFileName": "",
 "timestampOffset": -6875,
 "url": ""
@@ -743,7 +1106,7 @@
 {
 "title": "Quiz",
 "content": "What is the value of π (Pi) rounded to two decimal places?|3.14|3.33|3.00|3.14",
-"category": "quiz",
+"category": "Math",
 "imageFileName": "",
 "timestampOffset": -3310,
 "url": ""
@@ -751,7 +1114,7 @@
 {
 "title": "Quiz",
 "content": "What is the boiling point of water?|100°C|50°C|120°C|100°C",
-"category": "quiz",
+"category": "Science",
 "imageFileName": "",
 "timestampOffset": -5335,
 "url": ""
@@ -759,7 +1122,7 @@
 {
 "title": "Quiz",
 "content": "What ancient civilization built the pyramids?|Romans|Greeks|Egyptians|Egyptians",
-"category": "quiz",
+"category": "History",
 "imageFileName": "",
 "timestampOffset": -2135,
 "url": ""
@@ -767,7 +1130,7 @@
 {
 "title": "Quiz",
 "content": "What does supply and demand affect?|Market prices|Bank interest|Import taxes|Market prices",
-"category": "quiz",
+"category": "Economics",
 "imageFileName": "",
 "timestampOffset": -6122,
 "url": ""
@@ -775,7 +1138,7 @@
 {
 "title": "Quiz",
 "content": "What is 12 divided by 3?|4|3|6|4",
-"category": "quiz",
+"category": "Math",
 "imageFileName": "",
 "timestampOffset": -2745,
 "url": ""
@@ -783,15 +1146,15 @@
 {
 "title": "Quiz",
 "content": "What organ pumps blood through the body?|Lungs|Heart|Liver|Heart",
-"category": "quiz",
+"category": "Anatomy",
 "imageFileName": "",
 "timestampOffset": -3725,
 "url": ""
 },
 {
-"title": "History quiz",
+"title": "History Quiz",
 "content": "What year did the American Revolution begin?|1776|1789|1812|1776",
-"category": "quiz",
+"category": "History",
 "imageFileName": "",
 "timestampOffset": -1875,
 "url": ""
@@ -799,7 +1162,7 @@
 {
 "title": "Quiz",
 "content": "What is opportunity cost?|Cost of goods|Value of the next best alternative|Interest rate|Value of the next best alternative",
-"category": "quiz",
+"category": "Economics",
 "imageFileName": "",
 "timestampOffset": -4080,
 "url": ""
@@ -807,7 +1170,7 @@
 {
 "title": "Quiz",
 "content": "What is 25% of 80?|20|25|30|20",
-"category": "quiz",
+"category": "Math",
 "imageFileName": "",
 "timestampOffset": -4433,
 "url": ""
@@ -815,7 +1178,7 @@
 {
 "title": "Quiz",
 "content": "What planet is known as the Red Planet?|Mars|Jupiter|Venus|Mars",
-"category": "quiz",
+"category": "Science",
 "imageFileName": "",
 "timestampOffset": -3820,
 "url": ""
@@ -823,7 +1186,7 @@
 {
 "title": "Quiz",
 "content": "Who wrote the Declaration of Independence?|George Washington|Thomas Jefferson|Benjamin Franklin|Thomas Jefferson",
-"category": "quiz",
+"category": "History",
 "imageFileName": "",
 "timestampOffset": -4995,
 "url": ""
@@ -831,7 +1194,7 @@
 {
 "title": "Quiz",
 "content": "What is a budget?|Spending plan|Investment return|Loan agreement|Spending plan",
-"category": "quiz",
+"category": "Economics",
 "imageFileName": "",
 "timestampOffset": -6270,
 "url": ""
@@ -920,7 +1283,7 @@
 {
 "title": "Quiz: Who created the LISP programming language?",
 "content": "Who created the LISP programming language?|Dennis Ritchie|John McCarthy|Alan Turing|John McCarthy",
-"category": "quiz",
+"category": "Computer Science",
 "imageFileName": "",
 "timestampOffset": -2309,
 "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
@@ -928,7 +1291,7 @@
 {
 "title": "Quiz: What does LISP stand for?",
 "content": "What does LISP stand for?|Linear Programming|List Processing|Logical Syntax Parsing|List Processing",
-"category": "quiz",
+"category": "Computer Science",
 "imageFileName": "",
 "timestampOffset": -8957,
 "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
@@ -936,7 +1299,7 @@
 {
 "title": "Quiz: Which of the following is a common LISP dialect?",
 "content": "Which of the following is a common LISP dialect?|Python|Haskell|Common Lisp|Common Lisp",
-"category": "quiz",
+"category": "Computer Science",
 "imageFileName": "",
 "timestampOffset": -3200,
 "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
@@ -944,7 +1307,7 @@
 {
 "title": "Quiz: Which notation does LISP use for expressions?",
 "content": "Which notation does LISP use for expressions?|Infix|Postfix|Prefix|Prefix",
-"category": "quiz",
+"category": "Computer Science",
 "imageFileName": "",
 "timestampOffset": -3009,
 "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
@@ -952,7 +1315,7 @@
 {
 "title": "Quiz: What do 'car' and 'cdr' functions operate on in LISP?",
 "content": "What do 'car' and 'cdr' functions operate on in LISP?|Strings|Lists|Numbers|Lists",
-"category": "quiz",
+"category": "Computer Science",
 "imageFileName": "",
 "timestampOffset": -1585,
 "url": "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
