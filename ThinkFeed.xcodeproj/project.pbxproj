@@ -9,6 +9,8 @@
 /* Begin PBXFileReference section */
 		525B5EE22DB5986A00D9429E /* ThinkFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F9CEF92DCEAC0300785418 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52F9CEFB2DCEAD9400785418 /* app0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app0.png; sourceTree = "<group>"; };
+		52F9CEFC2DCEAD9400785418 /* app1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +36,8 @@
 			isa = PBXGroup;
 			children = (
 				52F9CEF92DCEAC0300785418 /* README.md */,
+				52F9CEFB2DCEAD9400785418 /* app0.png */,
+				52F9CEFC2DCEAD9400785418 /* app1.png */,
 				525B5EE42DB5986A00D9429E /* ThinkFeed */,
 				525B5EE32DB5986A00D9429E /* Products */,
 			);
