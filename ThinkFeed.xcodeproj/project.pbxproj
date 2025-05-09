@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		525B5EE22DB5986A00D9429E /* ThinkFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F9CEF92DCEAC0300785418 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +33,7 @@
 		525B5ED92DB5986A00D9429E = {
 			isa = PBXGroup;
 			children = (
+				52F9CEF92DCEAC0300785418 /* README.md */,
 				525B5EE42DB5986A00D9429E /* ThinkFeed */,
 				525B5EE32DB5986A00D9429E /* Products */,
 			);

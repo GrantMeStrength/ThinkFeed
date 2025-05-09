@@ -11,9 +11,8 @@ import SwiftData
 @main
 struct ThinkFeedApp: App {
     init() {
-        print("Application starting...")
+        
 
-       // UserDefaults.standard.set(true, forKey: "_SwiftData_Debug_Enabled")
     }
     
     var body: some Scene {
