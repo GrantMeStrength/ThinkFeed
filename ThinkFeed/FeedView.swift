@@ -162,9 +162,11 @@ struct FeedView: View {
     @AppStorage("hasLoadedInitialData") private var hasLoadedInitialData = false
     @AppStorage("selectedCategories") private var selectedCategoriesData: Data = try! JSONEncoder().encode(Set(PostCategory.allCases))
     @AppStorage("showLikedOnly") private var showLikedOnly = false
+    @AppStorage("enableWikipedia") private var enableWikipedia = true
     @State private var showingSettings = false
     @State private var showError = false
     @State private var errorMessage = ""
+    @State private var isFetchingFacts = false
     
     private var selectedCategories: Set<PostCategory> {
         (try? JSONDecoder().decode(Set<PostCategory>.self, from: selectedCategoriesData)) ?? Set(PostCategory.allCases)
@@ -191,6 +193,16 @@ struct FeedView: View {
                     .padding(.top, 40)
                 } else {
                     LazyVStack(alignment: .leading, spacing: 16) {
+                        if isFetchingFacts {
+                            HStack {
+                                ProgressView()
+                                Text("Discovering new facts…")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                        }
                         ForEach(filteredItems) { item in
                             PostView(item: item)
                         }
@@ -212,6 +224,9 @@ struct FeedView: View {
                 if !hasLoadedInitialData && allItems.isEmpty {
                     loadSampleData()
                     hasLoadedInitialData = true
+                }
+                if enableWikipedia {
+                    await fetchNewFacts()
                 }
             }
             .alert("Error", isPresented: $showError) {
@@ -236,6 +251,38 @@ struct FeedView: View {
             print("Error loading sample data: \(error)")
            
         }
+    }
+    
+    private func fetchNewFacts() async {
+        isFetchingFacts = true
+        defer { isFetchingFacts = false }
+
+        let existingTitles = Set(allItems.map(\.title))
+        let categories = selectedCategories.filter { $0 != .app }
+
+        await withTaskGroup(of: [FetchedFact].self) { group in
+            for category in categories {
+                group.addTask {
+                    await WikipediaFactFetcher.shared.fetchFacts(
+                        for: category, count: 2, existingTitles: existingTitles
+                    )
+                }
+            }
+
+            for await facts in group {
+                for fact in facts {
+                    let item = Item(
+                        title: fact.title,
+                        content: fact.content,
+                        category: fact.category,
+                        url: fact.url
+                    )
+                    modelContext.insert(item)
+                }
+            }
+        }
+
+        try? modelContext.save()
     }
 }
 
