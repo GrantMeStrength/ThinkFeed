@@ -12,13 +12,24 @@ import Foundation
 struct PostView: View {
     let item: Item
     @Environment(\.modelContext) private var modelContext
+    @AppStorage("enableWikipedia") private var enableWikipedia = true
     @State private var selectedAnswer: String? = nil
+    @State private var showShareSheet = false
+    
+    private var shareText: String {
+        var text = "\(item.title)\n\(item.content)"
+        if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines), !urlString.isEmpty {
+            text += "\n\(urlString)"
+        }
+        text += "\n— via ThinkFeed"
+        return text
+    }
     
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             ZStack {
                 Circle()
-                    .fill(Color.gray.opacity(0.2))
+                    .fill(Color.indigo.opacity(0.15))
                     .frame(width: 44, height: 44)
                 Text(item.category.icon)
                     .font(.title2)
@@ -43,12 +54,8 @@ struct PostView: View {
                             Button(action: {
                                 selectedAnswer = answers[index]
                                 if answers[index] == answers[4] {
-                                    DispatchQueue.main.async {
-                                        if item.correctAnswerCount < Int.max {
-                                            item.correctAnswerCount += 1
-                                            try? modelContext.save()
-                                        }
-                                    }
+                                    item.correctAnswerCount += 1
+                                    try? modelContext.save()
                                 }
                             }) {
                                 Text(answers[index])
@@ -105,19 +112,10 @@ struct PostView: View {
                             .foregroundColor(item.isLiked ? .red : .gray)
                     }
                     
-                    Button(action: {
-                        // Forward/share action
-                    }) {
-                        Image(systemName: "paperplane")
+                    ShareLink(item: shareText) {
+                        Image(systemName: "square.and.arrow.up")
                             .foregroundColor(.gray)
-                    }.disabled(true)
-                    
-                    Button(action: {
-                        // Quote/reply action
-                    }) {
-                        Image(systemName: "bubble.right")
-                            .foregroundColor(.gray)
-                    }.disabled(true)
+                    }
                     
                     if let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
                        let url = URL(string: urlString) {
@@ -139,14 +137,22 @@ struct PostView: View {
                 }
                 .font(.subheadline)
                 .padding(.top, 8)
+                
+                if enableWikipedia,
+                   let urlString = item.url?.trimmingCharacters(in: .whitespacesAndNewlines),
+                   !urlString.isEmpty,
+                   urlString.contains("wikipedia.org") {
+                    WikipediaExcerptView(wikiURL: urlString)
+                        .padding(.top, 4)
+                }
             }
             
             Spacer()
         }
         .padding()
-        .background(Color(.systemBackground))
+        .background(Color(.secondarySystemBackground))
         .cornerRadius(12)
-        .shadow(color: Color.black.opacity(0.25), radius: 4, x: 0, y: 2)
+        .shadow(color: Color.primary.opacity(0.08), radius: 4, x: 0, y: 2)
     }
 }
 
@@ -174,7 +180,7 @@ struct FeedView: View {
     // scrollTaskStarted removed
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 if filteredItems.isEmpty {
                     ContentUnavailableView(
@@ -192,6 +198,7 @@ struct FeedView: View {
                     .padding()
                 }
             }
+            .background(Color(.systemGroupedBackground))
             .navigationTitle("ThinkFeed")
             .toolbar {
                 Button(action: { showingSettings = true }) {

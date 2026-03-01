@@ -32,7 +32,5 @@ class Item {
         self.timestamp = timestamp
         self.imageFileName = imageFileName
         self.url = url
-        self.isLiked = isLiked
-        self.correctAnswerCount = correctAnswerCount
     }
 }

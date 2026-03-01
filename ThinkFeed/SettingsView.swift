@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("selectedCategories") private var selectedCategoriesData: Data = try! JSONEncoder().encode(Set(PostCategory.allCases))
+    @AppStorage("showLikedOnly") private var showLikedOnly = false
+    @AppStorage("enableWikipedia") private var enableWikipedia = true
+    @AppStorage("appearanceMode") private var appearanceMode: Int = 0
     @Environment(\.dismiss) private var dismiss
     
     private var selectedCategories: Binding<Set<PostCategory>> {
@@ -25,7 +28,7 @@ struct SettingsView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 Section(header: Text("Feed Categories")) {
                     ForEach(PostCategory.allCases, id: \.self) { category in
@@ -45,18 +48,7 @@ struct SettingsView: View {
                             }
                         }
                     }
-                   
                     
-                }
-                
-                Section {
-                    Toggle("❤️ Show only liked posts", isOn: Binding(
-                        get: { UserDefaults.standard.bool(forKey: "showLikedOnly") },
-                        set: { UserDefaults.standard.set($0, forKey: "showLikedOnly") }
-                    ))
-                }
-                
-                Section {
                     Button("Select All") {
                         selectedCategories.wrappedValue = Set(PostCategory.allCases)
                     }
@@ -64,6 +56,23 @@ struct SettingsView: View {
                     Button("Clear All") {
                         selectedCategories.wrappedValue = []
                     }
+                }
+                
+                Section {
+                    Toggle("❤️ Show only liked posts", isOn: $showLikedOnly)
+                }
+                
+                Section(header: Text("Content")) {
+                    Toggle("📖 Wikipedia content", isOn: $enableWikipedia)
+                }
+                
+                Section(header: Text("Appearance")) {
+                    Picker("Theme", selection: $appearanceMode) {
+                        Text("System").tag(0)
+                        Text("Light").tag(1)
+                        Text("Dark").tag(2)
+                    }
+                    .pickerStyle(.segmented)
                 }
             }
             .navigationTitle("Settings")

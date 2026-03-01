@@ -3,9 +3,8 @@
 
     {"title":"Welcome!","content":"Welcome to ThinkFeed! This app is designed to help you learn as you scroll: instead of wasting your time, you can learn something new. From the Settings page, you can pick the categories you are interested in learning.","category":"ThinkFeed","imageFileName":"welcome","timestampOffset":100000000, "url": ""},
 
-{"title":"Welcome!","content":"You can 'like' posts you enjoy, track your success at quizzes, and [soon] add your own comments. You can [soon] even share a fact you really like with your friends. Keep looking for updates, as the knowledge base will continue to grow. There are pictures, too!", "category":"ThinkFeed","imageFileName":"","timestampOffset":10000000, "url": ""},
-    
-    
+
+ 
     {
             "title": "Inventor of Lambda Calculus",
             "content": "Lambda calculus was invented by Alonzo Church in the 1930s to formalize the concept of computation.",
@@ -474,7 +473,7 @@
        },
        {
            "title": "DNA is 2 Meters Long! \ud83e\uddf5",
-           "content": "Each of your cells contains about 2 meters of DNA coiled into the nucleus. That\u2019s 200 billion km in your whole body!",
+           "content": "Each of your cells contains about 2 meters of DNA coiled into the nucleus. That\u2019s over 60 billion km across your whole body!",
            "category": "Biology",
            "imageFileName": "",
            "timestampOffset": -4173,
@@ -1153,7 +1152,7 @@
 },
 {
 "title": "History Quiz",
-"content": "What year did the American Revolution begin?|1776|1789|1812|1776",
+"content": "What year did the American Revolution begin?|1775|1789|1812|1775",
 "category": "History",
 "imageFileName": "",
 "timestampOffset": -1875,
@@ -3083,7 +3082,7 @@
 "category": "History",
 "imageFileName": "",
 "timestampOffset": -8138,
-"url": "https://en.wikipedia.org/wiki/Pi"
+"url": "https://en.wikipedia.org/wiki/Roman_Empire"
 },
 {
 "title": "Surrealism",
@@ -3283,7 +3282,7 @@
 "category": "Economics",
 "imageFileName": "",
 "timestampOffset": -4562,
-"url": "https://en.wikipedia.org/wiki/Pi"
+"url": "https://en.wikipedia.org/wiki/Capital_(economics)"
 },
 {
 "title": "Phonetics",

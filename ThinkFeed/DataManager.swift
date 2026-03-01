@@ -49,8 +49,6 @@ class DataManager {
                 throw DataError.invalidCategory
             }
             
-            //print("Loading post: \(post.title), url: \(post.url ?? "nil")")
-
             return Item(
                 title: post.title,
                 content: post.content,
